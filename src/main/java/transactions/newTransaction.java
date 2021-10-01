@@ -3,15 +3,14 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package package1;
+package transactions;
 
 /**
  *
  * @author alexkinser
  */
-public class Main {
+public class newTransaction {
     
-    public static void main(String[] args) {
-        //test
-    }
+    //to be utilized by the transactionUI in order to create new transactions
+    //new transactions will then be added to the transaction list
 }

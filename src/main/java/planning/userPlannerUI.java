@@ -6,8 +6,8 @@
 package planning;
 
 /**
- *
- * @author alexkinser
+ * This will be a UI class that displays a user's planner 
+ * and allows them to interact with, make, edit, and delete plans.
  */
 public class userPlannerUI {
     

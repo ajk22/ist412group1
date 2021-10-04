@@ -6,8 +6,8 @@
 package engine;
 
 /**
- * administer account
- * @author alexkinser
+ * extends user and this is the creation of the admin object
+ * 
  */
 public class admin {
     

@@ -11,6 +11,8 @@ package worker;
  */
 public class workerShift {
     
-    //a workers schedule is made up of multiple worker shifts
-    //worker shifts need a worker, an attraction where they are working, a date and a time
+    /**
+     * a workers schedule is made up of multiple worker shifts
+worker shifts need a worker, an attraction where they are working, a date and a time
+     */
 }

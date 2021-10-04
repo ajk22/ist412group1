@@ -11,6 +11,8 @@ package worker;
  */
 public class workerSchedule {
     
-    //a worker schedule is a collection or list of worker shifts
-    //this class will be utilized by the workerProfile class
+    /**
+     * a worker schedule is a collection or list of worker shifts
+this class will be utilized by the workerProfile class
+     */
 }

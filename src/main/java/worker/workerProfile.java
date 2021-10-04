@@ -11,8 +11,10 @@ package worker;
  */
 public class workerProfile {
     
-    //creates a worker profile based off of a given worker/users login information
-    //assure that the user is in fact a worker before making the profile
-    //a worker profile needs a worker and also needs a workers schedule
-    //
+   /**
+    * creates a worker profile based off of a given worker/users login information
+      assure that the user is in fact a worker before making the profile
+      a worker profile needs a worker and also needs a workers schedule
+    
+    */
 }

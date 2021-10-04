@@ -11,5 +11,7 @@ package worker;
  */
 public class workerUI {
     
-    //a User Interface to be accessed by workers where they can view their profile and their schedu;e
+    /**
+     * a User Interface to be accessed by workers where they can view their profile and their schedule
+     */
 }

@@ -6,8 +6,8 @@
 package planning;
 
 /**
- *
- * @author alexkinser
+ * This class will help users list out all of the plans they
+ * currently have created or planned.
  */
 public class plansList {
     

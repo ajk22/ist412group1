@@ -6,8 +6,8 @@
 package parkinfo;
 
 /**
- *
- * @author alexkinser
+ * This class will be a data structure or object that acts
+ * as a base to build a park map off of.
  */
 public class parkMap {
     

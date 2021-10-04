@@ -6,8 +6,10 @@
 package admin;
 
 /**
- *
- * @author alexkinser
+ * This class will hold global information from all areas:
+ * Calender, Events, Park info, guest info, vendor info,
+ * in order to display it on our GUI through setters and getters
+ * 
  */
 public class databaseUI {
     

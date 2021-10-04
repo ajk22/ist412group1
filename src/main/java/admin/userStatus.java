@@ -6,13 +6,13 @@
 package admin;
 
 /**
- *
- * @author alexkinser
+ * communicates with engine package
+ * gives admin functionality to view and adjust a users information
+ * 
  */
 public class userStatus {
     
-    //communicates with engine package
-    //gives admin functionality to view and adjust a users information
+
     //ex. locate user information for technical support
     //ex. manually delete users from database
     //ex. view collective statistics of user information 

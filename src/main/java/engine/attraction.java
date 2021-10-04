@@ -11,6 +11,8 @@ package engine;
  */
 public class attraction {
     
-    //base class for ride, shop, restaurant, and event
+    /**
+     * base class for ride, shop, restaurant, and event
+     */
     
 }

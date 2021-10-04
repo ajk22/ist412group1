@@ -11,9 +11,11 @@ package engine;
  */
 public class engine {
     
-    //bulk of project relies on engine and its functions
-    //reading and writing data
-    //saving and updating information
-    //initialize the process of creating all objects and lists
+    /**
+     * bulk of project relies on engine and its functions
+     * reading and writing data
+     * saving and updating information
+     * initialize the process of creating all objects and lists
+     */
     
 }

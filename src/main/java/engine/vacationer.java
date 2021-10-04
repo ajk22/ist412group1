@@ -10,5 +10,7 @@ package engine;
  * @author alexkinser
  */
 public class vacationer {
-    //extends user
+    /**
+     * extends user
+     */
 }

@@ -11,5 +11,7 @@ package engine;
  */
 public class ride {
     
-    //extends attraction
+    /**
+     * extends attraction
+     */ 
 }

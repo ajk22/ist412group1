@@ -10,5 +10,7 @@ package engine;
  * @author alexkinser
  */
 public class worker {
-    //extends user
+    /**
+     * extends user
+     */
 }

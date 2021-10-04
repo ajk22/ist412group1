@@ -11,5 +11,7 @@ package engine;
  */
 public class controller {
     
-    //mediates communication between other packages and engine + engine parts  
+    /**
+     * mediates communication between other packages and engine + engine parts 
+     */
 }

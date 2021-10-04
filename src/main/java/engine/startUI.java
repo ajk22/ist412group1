@@ -11,7 +11,8 @@ package engine;
  */
 public class startUI {
     
-    //starting UI or home screen of the application
-    //to be presented before login or main menu
+    /**starting UI or home screen of the application
+     * to be presented before login or main menu
+     */
     
 }

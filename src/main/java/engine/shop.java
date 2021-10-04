@@ -6,10 +6,22 @@
 package engine;
 
 /**
- *
+ * 
  * @author alexkinser
  */
 public class shop {
-    
+    public String address;
     //extends attraction
+
+    public String getAddress() {
+        return address;
+    }
+
+    public void setAddress(String address) {
+        this.address = address;
+    }
+
+    public shop(String address) {
+        this.address = address;
+    }
 }

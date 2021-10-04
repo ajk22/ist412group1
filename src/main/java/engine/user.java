@@ -9,6 +9,10 @@ package engine;
  *
  * @author alexkinser
  */
+/**
+ * this class is the class of user, including users' account user name and password.
+ * 
+ */
 public class user {
    
     public String userName, password;

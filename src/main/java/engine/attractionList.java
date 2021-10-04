@@ -11,6 +11,8 @@ package engine;
  */
 public class attractionList {
     
-    //the list of attraction objects
+    /**
+     * the list of attraction objects
+     */
     
 }

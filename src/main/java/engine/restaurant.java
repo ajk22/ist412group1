@@ -6,7 +6,7 @@
 package engine;
 
 /**
- *
+ * this class is the class of restaurant, includes address, food and basic information of the restaurant in the park
  * @author alexkinser
  */
 public class restaurant {

@@ -6,12 +6,10 @@
 package engine;
 
 /**
- *
+ *  mediates communication between other packages and engine + engine parts.This is a controller class for the engine package
  * @author alexkinser
  */
 public class controller {
     
-    /**
-     * mediates communication between other packages and engine + engine parts 
-     */
+    //
 }

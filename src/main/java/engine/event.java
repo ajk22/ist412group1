@@ -5,18 +5,16 @@
  */
 package engine;
 
-/**
- *
- * @author alexkinser
- */
-public class event {
-    /**extends attraction
+   /** extends attraction
+     * this is a class for events of the park. The name of the event and time will be listed.
      * ex. a parade
      * ex. another special event at the park
      * ex. character photo opportunities
      * ex. musical street performance
      * ex. anything that is not a ride, restaurant, or shop
      */
+public class event {
+    
     
     public String name, time;
     /**

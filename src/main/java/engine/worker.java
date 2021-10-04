@@ -6,11 +6,9 @@
 package engine;
 
 /**
- *
+ *this class is one extend type of user
  * @author alexkinser
  */
 public class worker {
-    /**
-     * extends user
-     */
+    
 }

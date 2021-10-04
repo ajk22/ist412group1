@@ -5,14 +5,12 @@
  */
 package engine;
 
-/**
- *
- * @author alexkinser
- */
+/**starting UI or home screen of the application
+     * to be presented before login or main menu
+     * the home page class
+     */
 public class startUI {
     
-    /**starting UI or home screen of the application
-     * to be presented before login or main menu
-     */
+    
     
 }

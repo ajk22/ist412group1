@@ -4,12 +4,12 @@
  * and open the template in the editor.
  */
 package engine;
-
-public class userList{
-    
-    /**list of user, username&password
+    /** this class is the list of user, username&password, recording for the userlist
      * 
      */
+public class userList{
+    
+    
 }
 
 

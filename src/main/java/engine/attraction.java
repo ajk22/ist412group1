@@ -6,13 +6,11 @@
 package engine;
 
 /**
- *
+ * this is a base class for ride, shop, restaurant, and event
  * @author alexkinser
  */
 public class attraction {
     
-    /**
-     * base class for ride, shop, restaurant, and event
-     */
+    
     
 }

@@ -6,11 +6,9 @@
 package engine;
 
 /**
- *
+ * this class is the extend types of users 
  * @author alexkinser
  */
 public class vacationer {
-    /**
-     * extends user
-     */
+    
 }

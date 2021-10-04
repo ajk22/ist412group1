@@ -6,7 +6,7 @@
 package engine;
 
 /**
- *
+ * this class is a the list of attraction objects
  * @author alexkinser
  */
 public class attractionList {

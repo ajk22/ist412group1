@@ -6,8 +6,7 @@
 package parkinfo;
 
 /**
- *
- * @author alexkinser
+ * UI helper class that assists in displaying parkInfo in a user friendly manner.
  */
 public class parkInfoUI {
     

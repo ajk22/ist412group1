@@ -6,12 +6,9 @@
 package engine;
 
 /**
- *
- * @author alexkinser
- */
+     * one of the extends attraction, ride
+     */
 public class ride {
     
-    /**
-     * extends attraction
-     */ 
+    //
 }

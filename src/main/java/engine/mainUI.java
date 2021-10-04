@@ -5,13 +5,10 @@
  */
 package engine;
 
-/**
- *
- * @author alexkinser
- */
-public class mainUI {
-    /**
-     * main method UI
+   /**
+     *  main method UI 
      * this is where the user will enter other areas of the application where actual functionality is located
      */
+public class mainUI {
+    //
 }

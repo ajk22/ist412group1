@@ -5,17 +5,14 @@
  */
 package engine;
 
-/**
- *
- * @author alexkinser
- */
-public class engine {
-    
-    /**
+/**this class is for:
      * bulk of project relies on engine and its functions
      * reading and writing data
      * saving and updating information
      * initialize the process of creating all objects and lists
      */
+public class engine {
+    
+    //
     
 }

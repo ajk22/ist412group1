@@ -6,8 +6,9 @@
 package login;
 
 /**
- *
- * @author alexkinser
+ * Will have the functionality to retrieve and verify user information
+ * in order for them to be able to edit their info or plan a trip in the future.
+ * 
  */
 public class login {
     

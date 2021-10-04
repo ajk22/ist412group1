@@ -6,8 +6,9 @@
 package login;
 
 /**
- *
- * @author alexkinser
+ * This will also extend the login class and will be a page where new users
+ * can create an account which stores their information
+ * 
  */
 public class register {
     

@@ -6,8 +6,13 @@
 package admin;
 
 /**
- *
- * @author alexkinser
+ * This class will be pulling from the attraction package
+ * which will house all of ride info. This will act as a
+ * control of sorts. In this controller we will have the functionality
+ * to close a ride, add a ride, edit restaurant information and view
+ * ride statistics
+ * 
+ * 
  */
 public class attractionStatus {
     

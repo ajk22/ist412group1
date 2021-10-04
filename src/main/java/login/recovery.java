@@ -6,8 +6,9 @@
 package login;
 
 /**
- *
- * @author alexkinser
+ * This will extend the login class and will allow users to enter a page where
+ * they can recover their password or set a new one.
+ * 
  */
 public class recovery {
     

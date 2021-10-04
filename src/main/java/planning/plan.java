@@ -6,8 +6,9 @@
 package planning;
 
 /**
- *
- * @author alexkinser
+ * This abstract class will represent a "plan" that a user makes, possibly
+ * including an attraction, the day planned, time planned, distance, cost
+ * and more details involved.
  */
 public class plan {
     

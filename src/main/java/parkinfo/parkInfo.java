@@ -6,8 +6,8 @@
 package parkinfo;
 
 /**
- *
- * @author alexkinser
+ * This will be used by ParkInfoUI to retrieve info to feed to the
+ * user interface about the park and relevant information.
  */
 public class parkInfo {
     

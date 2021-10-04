@@ -10,7 +10,9 @@ package transactions;
  * @author alexkinser
  */
 public class newTransaction {
-    
-    //to be utilized by the transactionUI in order to create new transactions
-    //new transactions will then be added to the transaction list
+    /**
+     * to be utilized by the transactionUI in order to create new transactions
+       new transactions will then be added to the transaction list
+     */
+   
 }

@@ -11,5 +11,7 @@ package transactions;
  */
 public class transactionUI {
     
-    //User interface which grants user the ability to make new transactions
+    /**
+     * User interface which grants user the ability to make new transactions
+     */
 }

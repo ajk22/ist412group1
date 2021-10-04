@@ -11,7 +11,9 @@ package transactions;
  */
 public class transaction {
     
-    //an object to record a users supposed transactions
-    //user, date, time, amount in $, item purchased(attraction), etc
-    //...
+   /**
+    *  an object to record a users supposed transactions
+ user, date, time, amount in $, item purchased(attraction), etc
+    
+    */
 }

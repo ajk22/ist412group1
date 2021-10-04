@@ -11,5 +11,7 @@ package transactions;
  */
 public class transactionList {
     
-    //a class or list of transaction objects
+    /**
+     * a class or list of transaction objects
+     */
 }

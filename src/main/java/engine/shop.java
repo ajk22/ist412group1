@@ -7,7 +7,7 @@ package engine;
 
 /**
  * one of the extends attraction, shop
- * @author alexkinser
+ * 
  */
 public class shop {
     public String address;

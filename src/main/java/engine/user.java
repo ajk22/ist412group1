@@ -8,7 +8,7 @@ package engine;
 
 /**
  * this class is the class of user, including users' account user name and password.
- * @author alexkinser
+ * 
  */
 public class user {
    

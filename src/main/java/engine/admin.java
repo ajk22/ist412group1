@@ -6,7 +6,7 @@
 package engine;
 
 /**
- *
+ * administer account
  * @author alexkinser
  */
 public class admin {

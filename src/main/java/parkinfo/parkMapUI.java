@@ -6,8 +6,8 @@
 package parkinfo;
 
 /**
- *
- * @author alexkinser
+ * This class will help act as a UI to display the park map
+ * to the user based on what park they have selected.
  */
 public class parkMapUI {
     

@@ -10,5 +10,10 @@ package engine;
      * this is where the user will enter other areas of the application where actual functionality is located
      */
 public class mainUI {
-    //
+
+    public mainUI() {
+        
+    }
+    
+    
 }

@@ -12,6 +12,9 @@ package engine;
 public class shop {
     public String address;
     //extends attraction
+    public shop() {
+        
+    }
 
     public String getAddress() {
         return address;

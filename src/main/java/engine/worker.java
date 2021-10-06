@@ -11,4 +11,8 @@ package engine;
  */
 public class worker {
     
+    public worker() {
+        
+    }
+    
 }

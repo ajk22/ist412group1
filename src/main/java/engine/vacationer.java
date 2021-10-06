@@ -11,4 +11,8 @@ package engine;
  */
 public class vacationer {
     
+    public vacationer() {
+        
+    }
+    
 }

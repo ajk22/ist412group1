@@ -11,5 +11,7 @@ package engine;
  */
 public class controller {
     
-    //
+    public controller() {
+        
+    }
 }

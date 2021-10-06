@@ -15,6 +15,9 @@ package engine;
      */
 public class event {
     
+    public event() {
+        
+    }
     
     public String name, time;
     /**

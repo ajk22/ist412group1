@@ -13,6 +13,8 @@ package engine;
      */
 public class engine {
     
-    //
+    public engine() {
+        
+    }
     
 }

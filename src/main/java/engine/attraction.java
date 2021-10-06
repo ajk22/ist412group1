@@ -11,6 +11,8 @@ package engine;
  */
 public class attraction {
     
-    
+    public attraction() {
+        
+    }
     
 }

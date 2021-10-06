@@ -12,6 +12,9 @@ package engine;
      */
 public class startUI {
     
+    public startUI() {
+        
+    }
     
     
 }

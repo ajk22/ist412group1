@@ -9,6 +9,10 @@ package engine;
      */
 public class userList{
     
+    public userList() {
+        
+    }
+    
     
 }
 

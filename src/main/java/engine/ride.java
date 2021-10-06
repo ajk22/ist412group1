@@ -10,5 +10,8 @@ package engine;
      */
 public class ride {
     
+    public ride() {
+        
+    }
     
 }

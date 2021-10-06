@@ -11,9 +11,11 @@ package engine;
  */
 public class admin {
     
-    
     // extends user
     // admin object to be added to user list
+    public admin() {
+        
+    }
      
     
 }

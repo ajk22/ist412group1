@@ -14,5 +14,8 @@ public class attractionList {
     /**
      * the list of attraction objects
      */
+    public attractionList() {
+        
+    }
     
 }

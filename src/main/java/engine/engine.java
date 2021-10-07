@@ -20,7 +20,7 @@ public class engine {
         
         this.userList = new userList();
         this.attractionList = new attractionList();
-        startEngine();
+        //startEngine();
     }
 
     private void startEngine() {        

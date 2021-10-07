@@ -25,6 +25,7 @@ public final class tests1 {
         test1();
         test2();
         test3();
+        test4();
     }
     
     public void test1() {
@@ -76,7 +77,7 @@ public final class tests1 {
         boolean testBoolean = false;
 
         for (int i = 0; i < attractionList.getAttractionList().size(); i++) {
-            if (attractionList.getAttractionList().get(i).getAttractionName().equals("FerrisWheel")) {
+            if (attractionList.getAttractionList().get(i).getAttractionName().equals("Ferris Wheel")) {
                 testBoolean = true;
             }
         }

@@ -27,7 +27,7 @@ public class databaseUI {
         //TO DO
         //initialize the panel size and other settings
         
-        initComponents();
+        //initComponents();
     }
 
     private void initComponents() {

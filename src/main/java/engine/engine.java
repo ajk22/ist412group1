@@ -13,8 +13,51 @@ package engine;
      */
 public class engine {
     
+    private attractionList attractionList;
+    private userList userList;
+    
     public engine() {
         
+        this.userList = new userList();
+        this.attractionList = new attractionList();
+        startEngine();
+    }
+
+    private void startEngine() {        
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        //TO-DO
+        //1. Implement methods to load and parse data files to create objects
+        //2. Implement methods to save data
+        //3. Implement methods to communicate with other parts in the engine
+        //4. Implement methods to communicate with the controller
+    }
+
+    /**
+     * @return attractionList
+     */
+    public attractionList getAttractionList() {
+        return attractionList;
+    }
+
+    /**
+     * @param attractionList
+     */
+    public void setAttractionList(attractionList attractionList) {
+        this.attractionList = attractionList;
+    }
+
+    /**
+     * @return userList
+     */
+    public userList getUserList() {
+        return userList;
+    }
+
+    /**
+     * @param userList
+     */
+    public void setUserList(userList userList) {
+        this.userList = userList;
     }
     
 }

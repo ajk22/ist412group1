@@ -9,38 +9,34 @@ package engine;
  * this class is the class of restaurant, includes address, food and basic information of the restaurant in the park
  * 
  */
-public class restaurant {
-    public String address, food;
+public class restaurant extends attraction {
+    private String foodType;
     /**
-     * address = address of the restaurant
-     * food = food in the restaurant
-     * @param address
-     * @param food 
-     */
-    //extends attraction
-
-    public restaurant(String address, String food) {
-        this.address = address;
-        this.food = food;
-    }
-    /**
-     * default constructor
-     * @return 
+     * foodType = type of food in the restaurant (example: tacos, sandwiches, ice cream, etc.)
+     * @param foodType
      */
 
-    public String getAddress() {
-        return address;
+    /**
+     * constructor
+     */
+    public restaurant(String attractionName, String openingTime, String closingTime, String foodType) {
+        super(attractionName, openingTime, closingTime);
+        this.foodType = foodType;
     }
 
-    public void setAddress(String address) {
-        this.address = address;
+    /**
+     * @return the foodType
+     */
+    public String getFoodType() {
+        return foodType;
     }
 
-    public String getFood() {
-        return food;
+    /**
+     * @param foodType the foodType to set
+     */
+    public void setFoodType(String foodType) {
+        this.foodType = foodType;
     }
 
-    public void setFood(String food) {
-        this.food = food;
-    }
+    
 }

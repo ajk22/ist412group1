@@ -13,42 +13,44 @@ package engine;
      * ex. musical street performance
      * ex. anything that is not a ride, restaurant, or shop
      */
-public class event {
+public class event extends attraction {
     
-    public event() {
+    private String eventType;
+    private double eventCost;
+    
+    public event(String attractionName, String openingTime, 
+            String closingTime, String eventType, double eventCost) {
         
+        super(attractionName, openingTime, closingTime);
+        this.eventType = eventType;
+        this.eventCost = eventCost;
     }
-    
-    public String name, time;
+
     /**
-     * name = event name
-     * time = time of the event
+     * @return eventType
      */
-    public String getName() {
-        return name;
+    public String getEventType() {
+        return eventType;
     }
+
     /**
-     * 
-     * Getter and Setter of name and time 
+     * @param eventType
      */
-
-    public void setName(String name) {
-        this.name = name;
+    public void setEventType(String eventType) {
+        this.eventType = eventType;
     }
 
-    public String getTime() {
-        return time;
-    }
-
-    public void setTime(String time) {
-        this.time = time;
-    }
-
-    public event(String name, String time) {
-        this.name = name;
-        this.time = time;
-    }
     /**
-     * default constructor
+     * @return eventCost
      */
+    public double getEventCost() {
+        return eventCost;
+    }
+
+    /**
+     * @param eventCost
+     */
+    public void setEventCost(double eventCost) {
+        this.eventCost = eventCost;
+    }
 }

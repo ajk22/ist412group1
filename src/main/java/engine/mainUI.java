@@ -5,14 +5,35 @@
  */
 package engine;
 
+import java.awt.GridBagConstraints;
+import java.awt.GridBagLayout;
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+
    /**
-     *  main method UI 
+     * main method UI 
      * this is where the user will enter other areas of the application where actual functionality is located
      */
-public class mainUI {
+public class mainUI extends JFrame {
+    
+    /**
+     *
+     */
+    private JPanel mainPanel;
+    private GridBagLayout grid;
+    private GridBagConstraints layout;
 
     public mainUI() {
+        //TO DO
+        //initialize the panel size and other settings
         
+        initComponents();
+    }
+
+    private void initComponents() {
+        //TO DO
+        //modify and place JComponents into the UI
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
     
     

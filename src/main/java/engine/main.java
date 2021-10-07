@@ -5,6 +5,8 @@
  */
 package engine;
 
+import test.tests1;
+
 /**
  *
  * @author alexkinser
@@ -13,5 +15,8 @@ public class main {
     
     public static void main(String[] args) {
         //main method... only thing that needs done in this method is the initialization of the controller
+        controller controller = new controller();
+        //RUN TESTS IN MAIN
+        tests1 tests = new tests1();
     }
 }

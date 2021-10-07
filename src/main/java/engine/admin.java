@@ -9,13 +9,28 @@ package engine;
  * extends user and this is the creation of the admin object
  * 
  */
-public class admin {
+public class admin extends user {
     
-    // extends user
-    // admin object to be added to user list
-    public admin() {
-        
+    private int databasePersonalKey;
+    
+    public admin(String first, String last, String userName, String password, String email, int key) {
+        super(first, last, userName, password, email);
+        this.databasePersonalKey = key;
     }
-     
+
+    /**
+     * @return databasePersonalKey
+     */
+    public int getDatabasePersonalKey() {
+        return databasePersonalKey;
+    }
+
+    /**
+     * @param databasePersonalKey
+     */
+    public void setDatabasePersonalKey(int databasePersonalKey) {
+        this.databasePersonalKey = databasePersonalKey;
+    }
+    
     
 }

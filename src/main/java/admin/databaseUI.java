@@ -5,14 +5,34 @@
  */
 package admin;
 
+import java.awt.GridBagConstraints;
+import java.awt.GridBagLayout;
+import javax.swing.JPanel;
+
 /**
- * This class will hold global information from all areas:
- * Calender, Events, Park info, guest info, vendor info,
- * in order to display it on our GUI through setters and getters
+ * This class will display global information from all areas:
+ * Calender, Events, Park info, guest info, vendor info
  * 
  */
 public class databaseUI {
     
-    //UI class which is fed information via other classes in package
-    
+    private JPanel mainPanel;
+    private GridBagLayout grid;
+    private GridBagConstraints layout;
+
+    /**
+     * UI class which is fed information via other classes in package
+     */
+    public databaseUI() {
+        //TO DO
+        //initialize the panel size and other settings
+        
+        initComponents();
+    }
+
+    private void initComponents() {
+        //TO DO
+        //modify and place JComponents into the UI
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
 }

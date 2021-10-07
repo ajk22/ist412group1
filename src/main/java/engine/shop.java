@@ -9,22 +9,29 @@ package engine;
  * one of the extends attraction, shop
  * 
  */
-public class shop {
-    public String address;
+public class shop extends attraction {
+   
     //extends attraction
-    public shop() {
-        
+    private String shopType;
+    
+    public shop(String attractionName, String openingTime, String closingTime, String shopType) {
+        super(attractionName, openingTime, closingTime);
+        this.shopType = shopType;
     }
 
-    public String getAddress() {
-        return address;
+    /**
+     * @return shopType
+     */
+    public String getShopType() {
+        return shopType;
     }
 
-    public void setAddress(String address) {
-        this.address = address;
+    /**
+     * @param shopType
+     */
+    public void setShopType(String shopType) {
+        this.shopType = shopType;
     }
 
-    public shop(String address) {
-        this.address = address;
-    }
+  
 }

@@ -4,15 +4,40 @@
  * and open the template in the editor.
  */
 package worker;
+import java.util.ArrayList;
 
 /**
  *
  * @author alexkinser
  */
-public class workerSchedule {
-    
-    /**
+/**
      * a worker schedule is a collection or list of worker shifts
 this class will be utilized by the workerProfile class
      */
+public class workerSchedule {
+    
+   private ArrayList<workerShift> Schedule = new ArrayList<>();
+
+    public workerSchedule(ArrayList<workerShift> Schedule) {
+        this.Schedule = Schedule;
+        
+    }
+
+    /**
+     * @return schedule, which is a list
+     */
+    public ArrayList<workerShift> getSchedule() {
+        return Schedule;
+    }
+
+    /**
+     * @param Schedule;
+     */
+    public void setSchedule(ArrayList<workerShift> Schedule) {
+        this.Schedule = Schedule;
+    }
+   
+
+    
+   
 }

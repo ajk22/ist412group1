@@ -12,6 +12,14 @@ package login;
  */
 public class register {
     
+    public register(String username, String password, String question, String answer) {
+        
+    }
+    
+    public boolean addAccount(String username, String password, String question, String answer) {
+        return false;
+    }
+    
     //register for account...
     //set username
     //set password

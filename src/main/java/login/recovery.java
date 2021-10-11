@@ -12,6 +12,22 @@ package login;
  */
 public class recovery {
     
+    public boolean resetPassword(String username) {
+        return false;
+    }
+    
+    public String getSecurityQuestion(String username) {
+        return "";
+    }
+    
+    public boolean verifySecurityQuestion(String username, String answer) {
+        return false;
+    }
+    
+    public boolean setNewPassword(String username, String password) {
+        return false;
+    }
+    
     //recover account... functionality neeeded
     //find password based on username
     //ask security question to retrieve password

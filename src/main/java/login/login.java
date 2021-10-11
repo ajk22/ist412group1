@@ -11,6 +11,13 @@ package login;
  * 
  */
 public class login {
+    public login(String username, String password) {
+        
+    }
+    
+    public boolean verifyInfo(String username, String password) {
+        return false;
+    }
     
     //login class... functionality needed
     //retrieve and verify username from usersList

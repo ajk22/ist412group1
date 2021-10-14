@@ -18,6 +18,13 @@ public class plan {
     String timePlanned;
     Double cost;
     
+    /**
+     * Constructor for the plan class.
+     * @param attraction the attraction to plan
+     * @param dayPlanned the day it's planned
+     * @param timePlanned the time it's planned
+     * @param cost the cost of the attraction
+     */
     public plan(String attraction, String dayPlanned, String timePlanned, Double cost){
         this.attraction = attraction;
         this.dayPlanned = dayPlanned;
@@ -27,21 +34,40 @@ public class plan {
     //an object
     //a plan should have an attraction, day planned, time planned, estimated travel distance, etc...
     
+    /**
+     * Instantiates the day of the week the user wants to plan on.
+     */
     public void setDayPlanned(){
     }
     
+    /**
+     * Instantiates the time of day the user wants to plan for.
+     */
     public void setTimePlanned(){
     }
     
+    /**
+     * Instantiates the attraction that will be planned for. 
+     */
     public void setAttraction(){
     }
-    
+    /**
+     * Instantiates the cost for the attraction. 
+     */
     public void setCost(){
     }
     
+    /**
+     * Calculates the cost for the planned day
+     * @return cost
+     */
     public Double getCost(){
         return cost;
     }
+    /**
+     * Returns the planned attraction
+     * @return attraction
+     */
     public String getAttraction() {
         return attraction;
     }

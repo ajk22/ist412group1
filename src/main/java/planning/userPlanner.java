@@ -13,9 +13,15 @@ public class userPlanner{
     
     //an object or list which automatically sorts a users plansList 
     //...so that it can be more easily displayed in the userPlannerUI
+    /**
+     * Sorts the users plans list.
+     */
     public void sortPlan(){
     }
     
+    /**
+     * Views the plans list.
+     */
     public void viewPlan(){
         
     }

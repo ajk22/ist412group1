@@ -17,13 +17,18 @@ this class will be utilized by the workerProfile class
 public class workerSchedule {
     
    private ArrayList<workerShift> Schedule = new ArrayList<>();
-
+   
+   /**
+    * Constructor for the workerSchedule class.
+    * @param Schedule 
+    */
     public workerSchedule(ArrayList<workerShift> Schedule) {
         this.Schedule = Schedule;
         
     }
 
     /**
+     * Displays the workers schedule
      * @return schedule, which is a list
      */
     public ArrayList<workerShift> getSchedule() {
@@ -31,6 +36,7 @@ public class workerSchedule {
     }
 
     /**
+     * Sets the workers schedule
      * @param Schedule;
      */
     public void setSchedule(ArrayList<workerShift> Schedule) {

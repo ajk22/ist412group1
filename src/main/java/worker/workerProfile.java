@@ -23,7 +23,12 @@ public class workerProfile {
     private String workerEmail;
     private workerSchedule schedule;
     
-
+    /**
+     * Constructor for the workerProfile class
+     * @param workerFirstName The first name of the worker
+     * @param workerLastName The last name of the worker
+     * @param workerEmail The email of the worker
+     */
     public workerProfile(String workerFirstName, String workerLastName, String workerEmail) {
         this.workerFirstName = workerFirstName;
         this.workerLastName = workerLastName;
@@ -33,6 +38,7 @@ public class workerProfile {
     }
 
     /**
+     * Displays the workers first name
      * @return worker's first name
      */
     public String getWorkerFirstName() {
@@ -40,12 +46,14 @@ public class workerProfile {
     }
 
     /**
-     * @param workerFirstName
+     * Sets the workers first name
+     * @param workerFirstName First name of the worker
      */
     public void setWorkerFirstName(String workerFirstName) {
         this.workerFirstName = workerFirstName;
     }
     /**
+     * Displays the users last name
      * @return worker's last name
      */
 
@@ -54,12 +62,14 @@ public class workerProfile {
     }
 
     /**
-     * @param workerLastName
+     * Sets the workers last name
+     * @param workerLastName The last name of the worker
      */
     public void setWorkerLastName(String workerLastName) {
         this.workerLastName = workerLastName;
     }
     /**
+     * Displays the workers email
      * @return worker's email
      */
 
@@ -68,13 +78,15 @@ public class workerProfile {
     }
 
     /**
-     * @param workerEmail
+     * Sets the workers email
+     * @param workerEmail The email of the worker
      */
     public void setWorkerEmail(String workerEmail) {
         this.workerEmail = workerEmail;
     }
 
     /**
+     * Displays the workers schedule
      * @return worker's schedule
      */
     public workerSchedule getSchedule() {
@@ -82,7 +94,8 @@ public class workerProfile {
     }
 
     /**
-     * @param schedule
+     * Sets the workers schedule.
+     * @param schedule The schedule of the worker
      */
     public void setSchedule(workerSchedule schedule) {
         this.schedule = schedule;

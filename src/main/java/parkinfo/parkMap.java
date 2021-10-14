@@ -17,6 +17,16 @@ public class parkMap extends ride{
     //add rides to the map (vertices)
     //add location or distance between the ride to the map (edges)
 
+    /**
+     * Constructor that takes in all of the information to be displayed on the 
+     * map
+     * @param attractionName The name of the attraction
+     * @param openingTime Time of opening for the attraction
+     * @param closingTime Time of closing for the attraction
+     * @param rideType The type of ride the attraction is
+     * @param rideDuration The duration while on the ride
+     * @param intensityRating The amount of intensity rated 1-10
+     */
     public parkMap(String attractionName, String openingTime, String closingTime, String rideType, double rideDuration, int intensityRating) {
         super(attractionName, openingTime, closingTime, rideType, rideDuration, intensityRating);
     }
@@ -39,6 +49,10 @@ class Edge {
             this.weight = weight;
         }
 }
+/**
+ * Graph to be displayed as a calender
+ * @author plsnobreakagain
+ */
 // Graph class
 class Graph {
     // node of adjacency list 

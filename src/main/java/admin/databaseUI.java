@@ -12,7 +12,6 @@ import javax.swing.JPanel;
 /**
  * This class will display global information from all areas:
  * Calender, Events, Park info, guest info, vendor info
- * 
  */
 public class databaseUI {
     
@@ -30,6 +29,9 @@ public class databaseUI {
         //initComponents();
     }
 
+    /**
+     * Compiles the JComonents into the UI
+     */
     private void initComponents() {
         //TO DO
         //modify and place JComponents into the UI

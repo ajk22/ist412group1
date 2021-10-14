@@ -20,8 +20,15 @@ import engine.engine;
  */
 public class attractionStatus {
     
+
     public attractionList attractionList;
     
+    /**
+    * This will be the constructor for the attractionStatus class
+    * 
+    * @param attractionList information taken from the ride class so that it can be added to
+    * a list
+    */
     public attractionStatus(attractionList attractionList) {
         this.attractionList = attractionList;
     }
@@ -33,35 +40,53 @@ public class attractionStatus {
     //ex. edit restaurant information
     //ex. view ride statistics
     
+    /**
+     * Deletes an attraction from the attraction list
+     * @param attraction the attraction
+     */
     public void deleteAttraction(attraction attraction) {
         //TO DO
         throw new UnsupportedOperationException("Not supported yet.");
     }
     
+    /**
+     * Searches the attraction list for a particular attraction
+     * @param attraction the attraction
+     */
     public void findAttraction(attraction attraction) {
         //TO DO
         throw new UnsupportedOperationException("Not supported yet.");
     }
     
+    /**
+     * Adds an attraction to the attraction list
+     * @param attraction the attraction
+     */
     public void addAttraction(attraction attraction) {
         //TO DO
         throw new UnsupportedOperationException("Not supported yet.");
     }
     
+    /**
+     * Allows the user or admin to rewrite an attraction description
+     * @param attraction the attraction
+     */
     public void editAttraction(attraction attraction) {
         //TO DO
         throw new UnsupportedOperationException("Not supported yet.");
     }
 
     /**
-     * @return attractionList
+     * Pulls the attraction list and displays it to the user
+     * @return attractionList the attraction list
      */
     public attractionList getAttractionList() {
         return attractionList;
     }
 
     /**
-     * @param attractionList
+     * Saves the attraction list with any changes or edits made
+     * @param attractionList the attraction list
      */
     public void setAttractionList(attractionList attractionList) {
         

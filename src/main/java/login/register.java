@@ -12,10 +12,26 @@ package login;
  */
 public class register {
     
+    /**
+     * This will be the constructor which will take in the information the user
+     * enters.
+     * @param username
+     * @param password
+     * @param question
+     * @param answer 
+     */
     public register(String username, String password, String question, String answer) {
         
     }
     
+    /**
+     * This will add the created account to the user registrar. 
+     * @param username
+     * @param password
+     * @param question
+     * @param answer
+     * @return If it was successful.
+     */
     public boolean addAccount(String username, String password, String question, String answer) {
         return false;
     }

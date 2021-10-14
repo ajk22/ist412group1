@@ -11,7 +11,6 @@ import javax.swing.JPanel;
 
 /**
  * UI where users will be able to register, login, or recover a password
- * 
  */
 public class loginUI {
     //UI where users will be able to register, login, or recover a password

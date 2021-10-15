@@ -10,8 +10,8 @@ import java.awt.GridBagLayout;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 
-/**
- * starting UI or home screen of the application
+     /**
+     * starting UI or home screen of the application.
      * to be presented before login or main menu
      * the home page class
      */
@@ -21,6 +21,10 @@ public class startUI extends JFrame {
     private GridBagLayout grid;
     private GridBagConstraints layout;
     
+    
+    /**
+     * Constructor for the startUI class.
+     */
     public startUI() {
         //TO DO
         //initialize the panel size and other settings
@@ -28,6 +32,9 @@ public class startUI extends JFrame {
         //initComponents();
     }
 
+    /**
+     * Generates UI components.
+     */
     private void initComponents() {
         //TO DO
         //modify and place JComponents into the UI

@@ -5,8 +5,8 @@
  */
 package engine;
 
-/**
-     * one of the extends attraction, ride
+    /**
+     * one of the extends attraction, ride.
      */
 public class ride extends attraction {
     
@@ -14,6 +14,15 @@ public class ride extends attraction {
     private double rideDuration;
     private int intensityRating;
     
+    /**
+     * Constructor for the ride class.
+     * @param attractionName
+     * @param openingTime
+     * @param closingTime
+     * @param rideType
+     * @param rideDuration
+     * @param intesityRating
+     */
     public ride(String attractionName, String openingTime, String closingTime,
             String rideType, double rideDuration, int intensityRating) {
         
@@ -24,6 +33,7 @@ public class ride extends attraction {
     }
 
     /**
+     * get the ride type
      * @return rideType
      */
     public String getRideType() {
@@ -31,6 +41,7 @@ public class ride extends attraction {
     }
 
     /**
+     * set the ride type
      * @param rideType
      */
     public void setRideType(String rideType) {
@@ -38,6 +49,7 @@ public class ride extends attraction {
     }
 
     /**
+     * get the ride duration
      * @return rideDuration
      */
     public double getRideDuration() {
@@ -45,6 +57,7 @@ public class ride extends attraction {
     }
 
     /**
+     * set the ride duration
      * @param rideDuration
      */
     public void setRideDuration(double rideDuration) {
@@ -52,6 +65,7 @@ public class ride extends attraction {
     }
 
     /**
+     * get the ride intensity rating
      * @return intensityRating
      */
     public int getIntensityRating() {
@@ -59,6 +73,7 @@ public class ride extends attraction {
     }
 
     /**
+     * set the ride intensity rating
      * @param intensityRating
      */
     public void setIntensityRating(int intensityRating) {

@@ -7,7 +7,7 @@ package engine;
 
 
 /**
- * this class is the class of user, including users' account user name and password.
+ * this class is the class of user, including user account user name and password.
  * 
  */
 public class user {
@@ -18,6 +18,14 @@ public class user {
     public String  userName, password;
     private String email;
 
+    /**
+     * Constructor for the user class.
+     * @param first
+     * @param last
+     * @param userName
+     * @param password
+     * @param email
+     */
     public user(String first, String last, String userName, String password, String email) {
         
         this.userName = userName;
@@ -29,6 +37,7 @@ public class user {
     }
 
     /**
+     * gets the username
      * @return userName
      */
     public String getUserName() {
@@ -36,6 +45,7 @@ public class user {
     }
     
     /**
+     * sets the username
      * @param userName
      */
     public void setUserName(String userName) {
@@ -43,6 +53,7 @@ public class user {
     }
 
     /**
+     * gets the password
      * @return password
      */
     public String getPassword() {
@@ -50,6 +61,7 @@ public class user {
     }
 
     /**
+     * sets the password
      * @param password
      */
     public void setPassword(String password) {
@@ -57,6 +69,7 @@ public class user {
     }
 
     /**
+     * gets the first name
      * @return first
      */
     public String getFirst() {
@@ -64,6 +77,7 @@ public class user {
     }
 
     /**
+     * sets the first name
      * @param first
      */
     public void setFirst(String first) {
@@ -71,6 +85,7 @@ public class user {
     }
 
     /**
+     * gets the last name
      * @return last
      */
     public String getLast() {
@@ -78,6 +93,7 @@ public class user {
     }
 
     /**
+     * sets the last name
      * @param last
      */
     public void setLast(String last) {
@@ -85,6 +101,7 @@ public class user {
     }
 
     /**
+     * gets the email
      * @return email
      */
     public String getEmail() {
@@ -92,6 +109,7 @@ public class user {
     }
 
     /**
+     * sets the email
      * @param email
      */
     public void setEmail(String email) {

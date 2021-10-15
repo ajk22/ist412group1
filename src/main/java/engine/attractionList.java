@@ -16,20 +16,22 @@ public class attractionList {
     private ArrayList<attraction> attractionList;
     
     /**
-     * the list of attraction objects
+     * Constructor for the attractionList class.
      */
     public attractionList() {
         this.attractionList = new ArrayList<>();
     }
 
     /**
-     * @return
+     * get the attraction list
+     * @return attractionList
      */
     public ArrayList<attraction> getAttractionList() {
         return attractionList;
     }
 
     /**
+     * set the attraction list
      * @param attractionList
      */
     public void setAttractionList(ArrayList<attraction> attractionList) {
@@ -37,6 +39,7 @@ public class attractionList {
     }
     
     /**
+     * add an attraction to the list
      * @param attraction
      */
     public void addAttraction(attraction attraction) {
@@ -45,6 +48,10 @@ public class attractionList {
         setAttractionList(this.sortList());
     }
     
+    /**
+     * sorts the attraction list
+     * @return attractionList
+     */
     public ArrayList<attraction> sortList() {
         //TO DO
         return attractionList;

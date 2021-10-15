@@ -11,18 +11,18 @@ import javax.swing.JFrame;
 import javax.swing.JPanel;
 
    /**
-     * main method UI 
+     * main method UI .
      * this is where the user will enter other areas of the application where actual functionality is located
      */
 public class mainUI extends JFrame {
     
-    /**
-     *
-     */
     private JPanel mainPanel;
     private GridBagLayout grid;
     private GridBagConstraints layout;
 
+    /**
+     * Constructor for the mainUI class.
+     */
     public mainUI() {
         //TO DO
         //initialize the panel size and other settings
@@ -30,6 +30,9 @@ public class mainUI extends JFrame {
         //initComponents();
     }
 
+    /**
+     * Generates the UI components.
+     */
     private void initComponents() {
         //TO DO
         //modify and place JComponents into the UI

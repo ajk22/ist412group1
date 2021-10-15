@@ -8,17 +8,21 @@ package engine;
 import java.util.ArrayList;
 
     /** 
-     * this class is the list of user, username&password, recording for the userlist
+     * this class is the list of user, username&password, recording for the userlist.
      */
 public class userList{
 
     public ArrayList<user> userList;
     
+    /**
+     * Constructor for the userList class.
+     */
     public userList() {
         this.userList = new ArrayList<>();
     }
 
     /**
+     * gets the user list
      * @return the userList
      */
     public ArrayList<user> getUserList() {
@@ -26,12 +30,17 @@ public class userList{
     }
 
     /**
+     * sets the user list
      * @param userList the userList to set
      */
     public void setUserList(ArrayList<user> userList) {
         this.userList = userList;
     }
     
+    /**
+     * adds a user to the list.
+     * @param user
+     */
     public void addUser(user user) {
         userList.add(user);
         //sets list to a properly sorted list
@@ -39,9 +48,8 @@ public class userList{
     }
     
     /**
+     * sorts the user list.
      * @return this
-     * sorts this list
-     * returns this list
      */
     public ArrayList<user> sortList() {
         //TO DO

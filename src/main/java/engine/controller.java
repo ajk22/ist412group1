@@ -14,7 +14,7 @@ import transactions.transactionUI;
 import worker.workerUI;
 
 /**
- *  mediates communication between other packages and engine + engine parts
+ * mediates communication between other packages and engine + engine parts
  * This is a controller class for the engine package
  * 
  * !!THIS IS THE ONLY CLASS THAT IS TO COMMUNICATE WITH THE UIs DIRECTLY!!
@@ -37,6 +37,9 @@ public class controller {
     public transactionUI transactionUI;
     public workerUI workerUI;
     
+    /**
+     * Constructor for the controller class.
+     */
     public controller() {
         this.engine = new engine();
         this.mainUI = new mainUI();

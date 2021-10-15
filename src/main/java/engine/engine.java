@@ -5,17 +5,20 @@
  */
 package engine;
 
-/**this class is for:
+    /**this class is for:
      * bulk of project relies on engine and its functions
      * reading and writing data
      * saving and updating information
-     * initialize the process of creating all objects and lists
+     * initialize the process of creating all objects and lists.
      */
 public class engine {
     
     private attractionList attractionList;
     private userList userList;
     
+    /**
+     * Constructor for the attractionList class.
+     */
     public engine() {
         
         this.userList = new userList();
@@ -23,6 +26,9 @@ public class engine {
         //startEngine();
     }
 
+    /**
+     * starts the engine... loads data
+     */
     private void startEngine() {        
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
         //TO-DO
@@ -33,6 +39,7 @@ public class engine {
     }
 
     /**
+     * gets the attraction list
      * @return attractionList
      */
     public attractionList getAttractionList() {
@@ -40,6 +47,7 @@ public class engine {
     }
 
     /**
+     * set the attraction list
      * @param attractionList
      */
     public void setAttractionList(attractionList attractionList) {
@@ -47,6 +55,7 @@ public class engine {
     }
 
     /**
+     * get the user list
      * @return userList
      */
     public userList getUserList() {
@@ -54,6 +63,7 @@ public class engine {
     }
 
     /**
+     * set the user list
      * @param userList
      */
     public void setUserList(userList userList) {

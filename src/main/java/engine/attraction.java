@@ -15,6 +15,12 @@ public class attraction {
     private String openingTime;
     private String closingTime;
     
+    /**
+     * Constructor for the attraction class.
+     * @param attractionName the name of the attraction
+     * @param openingTime the opening time of the attraction
+     * @param closingTime the closing time of the attraction
+     */
     public attraction(String attractionName, String openingTime, String closingTime) {
         this.attractionName = attractionName;
         this.closingTime = closingTime;
@@ -22,6 +28,7 @@ public class attraction {
     }
 
     /**
+     * get the attraction name
      * @return attractionName
      */
     public String getAttractionName() {
@@ -29,6 +36,7 @@ public class attraction {
     }
 
     /**
+     * set the attraction name
      * @param attractionName
      */
     public void setAttractionName(String attractionName) {
@@ -36,6 +44,7 @@ public class attraction {
     }
 
     /**
+     * get the attraction opening time
      * @return openingTime
      */
     public String getOpeningTime() {
@@ -43,6 +52,7 @@ public class attraction {
     }
 
     /**
+     * set the attraction opening time
      * @param openingTime
      */
     public void setOpeningTime(String openingTime) {
@@ -50,6 +60,7 @@ public class attraction {
     }
 
     /**
+     * get the attraction closing time
      * @return closingTime
      */
     public String getClosingTime() {
@@ -57,6 +68,7 @@ public class attraction {
     }
 
     /**
+     * set the attraction closing time
      * @param closingTime
      */
     public void setClosingTime(String closingTime) {

@@ -6,20 +6,27 @@
 package engine;
 
 /**
- * one of the extends attraction, shop
+ * extends attraction, shop.
  * 
  */
 public class shop extends attraction {
-   
     //extends attraction
     private String shopType;
     
+    /**
+     * Constructor for the restaurant class.
+     * @param attractionName
+     * @param openingTime
+     * @param closingTime
+     * @param shopType
+     */
     public shop(String attractionName, String openingTime, String closingTime, String shopType) {
         super(attractionName, openingTime, closingTime);
         this.shopType = shopType;
     }
 
     /**
+     * get the type of shop
      * @return shopType
      */
     public String getShopType() {
@@ -27,6 +34,7 @@ public class shop extends attraction {
     }
 
     /**
+     * set the type of shop
      * @param shopType
      */
     public void setShopType(String shopType) {

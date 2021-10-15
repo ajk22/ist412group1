@@ -8,19 +8,28 @@ package engine;
 import transactions.transactionList;
 
 /**
- * this class is the extend types of users 
+ * this class extends user.
  * 
  */
 public class vacationer extends user {
     
     private transactionList transactionList;
     
+    /**
+     * Constructor for the vacationer class.
+     * @param first
+     * @param last
+     * @param userName
+     * @param password
+     * @param email
+     */
     public vacationer(String first, String last, String userName, String password, String email) {
         super(first, last, userName, password, email);
         this.transactionList = new transactionList();
     }
 
     /**
+     * gets the transaction list
      * @return the list of transactions made by the specific user
      */
     public transactionList getTransactionList() {
@@ -28,6 +37,7 @@ public class vacationer extends user {
     }
 
     /**
+     * sets the transaction list
      * @param transactionList the list of transactions made by the specific user
      */
     public void setTransactionList(transactionList transactionList) {

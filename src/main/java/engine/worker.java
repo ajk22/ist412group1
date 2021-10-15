@@ -6,7 +6,7 @@
 package engine;
 
 /**
- *this class is one extend type of user
+ * this class extends user.
  * 
  */
 public class worker extends user {
@@ -14,6 +14,16 @@ public class worker extends user {
     private String jobPosition;
     private double salary;
     
+    /**
+     * Constructor for the worker class.
+     * @param first
+     * @param last
+     * @param userName
+     * @param password
+     * @param email
+     * @param jobPosition
+     * @param salary
+     */
     public worker(String first, String last, String userName, String password, 
             String email, String jobPosition, double salary) {
         
@@ -23,6 +33,7 @@ public class worker extends user {
     }
 
     /**
+     * gets the workers job position
      * @return jobPosition
      */
     public String getJobPosition() {
@@ -30,6 +41,7 @@ public class worker extends user {
     }
 
     /**
+     * sets the workers job position
      * @param jobPosition
      */
     public void setJobPosition(String jobPosition) {
@@ -37,6 +49,7 @@ public class worker extends user {
     }
 
     /**
+     * gets the workers salary
      * @return salary
      */
     public double getSalary() {
@@ -44,6 +57,7 @@ public class worker extends user {
     }
 
     /**
+     * sets the workers salary
      * @param salary
      */
     public void setSalary(double salary) {

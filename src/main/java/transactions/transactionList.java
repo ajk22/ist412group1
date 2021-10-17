@@ -5,6 +5,8 @@
  */
 package transactions;
 
+import java.util.ArrayList;
+
 /**
  *
  * @author alexkinser
@@ -12,6 +14,28 @@ package transactions;
 public class transactionList {
     
     /**
-     * a class or list of transaction objects
+     * a class or list of transaction objects.
      */
+    private ArrayList<transaction> transactionList;
+    
+    /**
+     * Constructor for the transactionList class.
+     */
+    public transactionList() {
+        this.transactionList = new ArrayList<>();
+    }
+
+    /**
+     * @return transactionList
+     */
+    public ArrayList<transaction> getTransactionList() {
+        return transactionList;
+    }
+
+    /**
+     * @param transactionList
+     */
+    public void setTransactionList(ArrayList<transaction> transactionList) {
+        this.transactionList = transactionList;
+    }
 }

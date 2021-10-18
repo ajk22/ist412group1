@@ -5,6 +5,9 @@
  */
 package parkinfo;
 
+import engine.controller;
+import transactions.transactionUI;
+
 /**
  *
  * this controller is the only thing in the package that is to communicate directly with engine package
@@ -13,5 +16,16 @@ package parkinfo;
  * @author alexkinser
  */
 public class parkInfoController {
+    
+    parkInfoUI parkInfoUI;
+    parkMapUI parkMapUI;
+    
+    /**
+     * Constructor for the parkInfoController class.
+     */
+    public parkInfoController() {
+        this.parkInfoUI = new parkInfoUI();
+        this.parkMapUI = new parkMapUI();
+    }
     
 }

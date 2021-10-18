@@ -5,13 +5,25 @@
  */
 package admin;
 
+import engine.controller;
+
 /**
- *
  * this controller is the only thing in the package that is to communicate directly with engine package
  * this controller is used to communicate between model class(es) and the UI class(es).
  * 
  * @author alexkinser
  */
 public class adminController {
+    
+    attractionStatus attractionStatus;
+    userStatus userStatus;
+    databaseUI databaseUI;
+    
+    /**
+    * This will be the constructor for the adminController class.
+    */
+    public adminController() {
+        this.databaseUI = new databaseUI();    
+    }
     
 }

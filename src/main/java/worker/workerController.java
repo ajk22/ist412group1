@@ -5,6 +5,8 @@
  */
 package worker;
 
+import engine.controller;
+
 /**
  *
  * this controller is the only thing in the package that is to communicate directly with engine package
@@ -13,5 +15,14 @@ package worker;
  * @author alexkinser
  */
 public class workerController {
+    
+    workerUI workerUI;
+    
+    /**
+     * Constructor for the workerController class.
+     */
+    public workerController() {
+        this.workerUI = new workerUI();
+    }
     
 }

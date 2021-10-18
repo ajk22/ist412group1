@@ -13,7 +13,7 @@ package engine;
      */
 public class engine {
     
-    private attractionList attractionList;
+    public attractionList attractionList;
     private userList userList;
     
     /**

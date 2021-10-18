@@ -5,6 +5,8 @@
  */
 package transactions;
 
+import engine.controller;
+
 /**
  *
  * this controller is the only thing in the package that is to communicate directly with engine package
@@ -13,5 +15,14 @@ package transactions;
  * @author alexkinser
  */
 public class transactionsController {
+    
+    transactionUI transactionUI;
+    
+    /**
+     * Constructor for the transactionController class.
+     */
+    public transactionsController() {
+        this.transactionUI = new transactionUI();
+    }
     
 }

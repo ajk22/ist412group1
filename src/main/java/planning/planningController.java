@@ -5,6 +5,8 @@
  */
 package planning;
 
+import engine.controller;
+
 /**
  *
  * this controller is the only thing in the package that is to communicate directly with engine package
@@ -13,5 +15,48 @@ package planning;
  * @author alexkinser
  */
 public class planningController {
+    
+    userPlannerUI userPlannerUI;
+    private userPlanner userPlanner;
+    private plansList plansList;
+    
+    /**
+     * Constructor for the planninController class.
+     * @param 
+     */
+    public planningController() {
+        
+        this.userPlannerUI = new userPlannerUI();
+        this.userPlanner = new userPlanner();
+        this.plansList = new plansList();
+    }
+
+    /**
+     * @return the userPlanner
+     */
+    public userPlanner getUserPlanner() {
+        return userPlanner;
+    }
+
+    /**
+     * @param userPlanner the userPlanner to set
+     */
+    public void setUserPlanner(userPlanner userPlanner) {
+        this.userPlanner = userPlanner;
+    }
+
+    /**
+     * @return the plansList
+     */
+    public plansList getPlansList() {
+        return plansList;
+    }
+
+    /**
+     * @param plansList the plansList to set
+     */
+    public void setPlansList(plansList plansList) {
+        this.plansList = plansList;
+    }
     
 }

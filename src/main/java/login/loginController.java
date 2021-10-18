@@ -5,6 +5,8 @@
  */
 package login;
 
+import engine.controller;
+
 /**
  *
  * this controller is the only thing in the package that is to communicate directly with engine package
@@ -13,5 +15,14 @@ package login;
  * @author alexkinser
  */
 public class loginController {
+    
+    loginUI loginUI;
+    
+    /**
+    * This will be the constructor for the loginController class.
+    */
+    public loginController() {
+    }
+    
     
 }

@@ -11,19 +11,16 @@ import java.util.*;
  * This class will help users list out all of the plans they
  * currently have created or planned.
  */
-public class plansList extends plan {
+public class plansList {
     
     //a collection of a users plans to be used by the userPlanner class
     ArrayList<plansList> plans = new ArrayList<>();
     /**
-     * Constructor for plansList class
-     * @param attraction the attraction to plan
-     * @param dayPlanned the day it's planned
-     * @param timePlanned the time it's planned
-     * @param cost the cost of the attraction 
+     * Constructor for plansList class.
      */
-    public plansList(String attraction, String dayPlanned, String timePlanned, Double cost) {
-        super(attraction, dayPlanned, timePlanned, cost);
+    public plansList() {
+        //super(attraction, dayPlanned, timePlanned, cost);
+        this.plans = new ArrayList<>();
     }
     
     /**

@@ -14,13 +14,29 @@ import java.util.*;
 public class plansList {
     
     //a collection of a users plans to be used by the userPlanner class
-    ArrayList<plansList> plans = new ArrayList<>();
+    ArrayList<plan> plans = new ArrayList<>();
     /**
      * Constructor for plansList class.
      */
     public plansList() {
         //super(attraction, dayPlanned, timePlanned, cost);
         this.plans = new ArrayList<>();
+    }
+    
+    /**
+     * the list of plans
+     * @return plans the list of plans
+     */
+    public ArrayList<plan> getList() {
+        return this.plans;
+    }
+    
+    /**
+     * the list of plans
+     * @param plans the list of plans
+     */
+    public void setList(ArrayList<plan> plans) {
+        this.plans = plans;
     }
     
     /**

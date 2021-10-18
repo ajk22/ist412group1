@@ -14,6 +14,11 @@ import engine.user;
 import engine.userList;
 import engine.vacationer;
 import engine.worker;
+import transactions.transaction;
+import transactions.transactionList;
+import planning.plan;
+import planning.plansList;
+import login.login;
 
 /**
  *
@@ -26,6 +31,12 @@ public final class tests1 {
         test2();
         test3();
         test4();
+        test5();
+        test6();
+        test7();
+        test8();
+        test9();
+        test10();
     }
     
     public void test1() {
@@ -86,6 +97,113 @@ public final class tests1 {
             System.out.println("Test 4 PASSED!");
         } else {
             System.out.println("Test 4 FAILED!");
+        }
+        
+    }
+    
+    public void test5() {
+        user vacationer1 = new vacationer("Julio", "Jones", "JulioJones123", "footballIsASport", "JulioJones@gmail.com");
+        transaction trans1 = new transaction(vacationer1, "1/12/2021", "3:00 PM", "Tickets, VIP Passes", 200.00, 14.00, 2);
+        
+        if (trans1.getUser().getEmail().equals(vacationer1.getEmail())) {
+            System.out.println("Test 5 PASSED!");
+        } else {
+            System.out.println("Test 5 FAILED!");
+        }  
+        
+    }
+    
+    public void test6() {
+        user vacationer1 = new vacationer("Julio", "Jones", "JulioJones123", "footballIsASport", "JulioJones@gmail.com");
+        transaction trans1 = new transaction(vacationer1, "1/12/2021", "3:00 PM", "Tickets, VIP Passes", 200.00, 14.00, 2);
+        transaction trans2 = new transaction(vacationer1, "1/13/2021", "12:30 PM", "Room Service, Taxi Ride, Show Tickets", 150.00, 10.50, 3);
+        transactionList transList = new transactionList();
+        transList.getTransactionList().add(trans1);
+        transList.getTransactionList().add(trans2);
+        transList.setTransactionList(transList.getTransactionList());
+        
+        if (transList.getTransactionList().size() == 2) {
+            System.out.println("Test 6 PASSED!");
+        } else {
+            System.out.println("Test 6 FAILED!");
+        }  
+        
+    }
+    
+    public void test7() {
+        user vacationer1 = new vacationer("Julio", "Jones", "JulioJones123", "footballIsASport", "JulioJones@gmail.com");
+        transaction trans1 = new transaction(vacationer1, "1/12/2021", "3:00 PM", "Tickets, VIP Passes", 200.00, 14.00, 2);
+        transaction trans2 = new transaction(vacationer1, "1/13/2021", "12:30 PM", "Room Service, Taxi Ride, Show Tickets", 150.00, 10.50, 3);
+        transactionList transList = new transactionList();
+        transList.getTransactionList().add(trans1);
+        transList.getTransactionList().add(trans2);
+        transList.setTransactionList(transList.getTransactionList());
+        
+        double total = 0;
+        for (int i = 0; i < transList.getTransactionList().size(); i++) {
+            total = total + transList.getTransactionList().get(i).getAmount();
+        }
+        
+        
+        if (total == 350) {
+          System.out.println("Test 7 PASSED!");
+        } else {
+            System.out.println("Test 7 FAILED!");
+        }
+    }
+    
+    public void test8() {
+        plan plan1 = new plan("Roller Coaster 1", "01/30/22", "12:00 PM", 5.00);
+        plan plan2 = new plan("Restaurant 4", "01/30/22", "1:00 PM", 25.00);
+        plan plan3 = new plan("Afternoon Parade", "01/30/22", "3:00 PM", 0.00);
+        
+        plansList planList = new plansList();
+        planList.getList().add(plan1);
+        planList.getList().add(plan2);
+        planList.getList().add(plan3);
+        
+        if (planList.getList().size() == 3) {
+        System.out.println("Test 8 PASSED!");
+        } else {
+            System.out.println("Test 8 FAILED!");
+        }
+    }
+    
+    public void test9() {
+        plan plan1 = new plan("Roller Coaster 1", "01/30/22", "12:00 PM", 5.00);
+        plan plan2 = new plan("Restaurant 4", "01/30/22", "1:00 PM", 25.00);
+        plan plan3 = new plan("Afternoon Parade", "01/30/22", "3:00 PM", 0.00);
+        
+        plansList planList = new plansList();
+        planList.getList().add(plan1);
+        planList.getList().add(plan2);
+        planList.getList().add(plan3);
+        
+        boolean flag = true;
+        for (int i = 0; i < planList.getList().size(); i++) {
+            if (planList.getList().get(i).getDate().equals( "01/30/22")) {
+                flag = true; 
+            } else {
+                flag = false;
+                i = planList.getList().size();
+            }
+        }
+        
+        if (flag) {
+            System.out.println("Test 9 PASSED!");
+        } else {
+            System.out.println("Test 9 FAILED!");
+        }
+    }
+    
+    public void test10() {
+        login login1 = new login("user123", "password");
+        login login2 = new login("user123", "abc123");
+        
+        if (login1.getUsername().equals(login2.getUsername())) {
+            System.out.println("Test 10 PASSED!");
+        } else {
+            System.out.println("Test 10 FAILED!");
         }
         
     }

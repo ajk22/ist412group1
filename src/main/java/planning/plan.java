@@ -72,5 +72,13 @@ public class plan {
         return attraction;
     }
     
+    /**
+     * Returns the day planned for the plan
+     * @return dayPlanned
+     */
+    public String getDate() {
+        return dayPlanned;
+    }
+    
     
 }

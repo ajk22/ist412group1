@@ -45,6 +45,7 @@ public class transaction {
         this.numOfItems = numOfItems;
     }
 
+
     /**
      * @return user
      */

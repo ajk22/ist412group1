@@ -22,6 +22,7 @@ public class loginController {
     * This will be the constructor for the loginController class.
     */
     public loginController() {
+        this.loginUI = new loginUI();
     }
     
     

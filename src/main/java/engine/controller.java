@@ -5,13 +5,12 @@
  */
 package engine;
 
-import admin.databaseUI;
-import login.loginUI;
-import parkinfo.parkInfoUI;
-import parkinfo.parkMapUI;
-import planning.userPlannerUI;
-import transactions.transactionUI;
-import worker.workerUI;
+import admin.adminController;
+import login.loginController;
+import parkinfo.parkInfoController;
+import planning.planningController;
+import transactions.transactionsController;
+import worker.workerController;
 
 /**
  * mediates communication between other packages and engine + engine parts
@@ -29,13 +28,12 @@ public class controller {
     public mainUI mainUI;
     //startUI is the opening screen, the first UI presented to the user
     public startUI startUI;
-    public loginUI loginUI;
-    public parkInfoUI parkInfoUI;
-    public parkMapUI parkMapUI;
-    public databaseUI databaseUI;
-    public userPlannerUI userPlannerUI;
-    public transactionUI transactionUI;
-    public workerUI workerUI;
+    public loginController loginController;
+    public parkInfoController parkInfoController;
+    public adminController adminController;
+    public planningController planningController;
+    public transactionsController transactionsController;
+    public workerController workerController;
     
     /**
      * Constructor for the controller class.
@@ -43,13 +41,12 @@ public class controller {
     public controller() {
         this.engine = new engine();
         this.mainUI = new mainUI();
-        this.loginUI = new loginUI();
-        this.workerUI = new workerUI();
-        this.parkInfoUI = new parkInfoUI();
-        this.parkMapUI = new parkMapUI();
-        this.databaseUI = new databaseUI();
-        this.userPlannerUI = new userPlannerUI();
-        this.transactionUI = new transactionUI();
         this.startUI = new startUI();
+        this.loginController = new loginController();
+        this.workerController = new workerController();
+        this.planningController = new planningController();
+        this.adminController = new adminController();
+        this.parkInfoController = new parkInfoController();
+        this.transactionsController = new transactionsController();
     }
 }

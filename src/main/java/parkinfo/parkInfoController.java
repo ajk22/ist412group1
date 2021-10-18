@@ -5,9 +5,6 @@
  */
 package parkinfo;
 
-import engine.controller;
-import transactions.transactionUI;
-
 /**
  *
  * this controller is the only thing in the package that is to communicate directly with engine package

@@ -14,7 +14,8 @@ import test.tests1;
 public class main {
     
     /**
-     * Main class... starts program by creating a controller and also runs tests
+     * Main class...starts program by creating a controller and also runs tests
+     * @param args arguments
      */
     public static void main(String[] args) {
         //main method... only thing that needs done in this method is the initialization of the controller

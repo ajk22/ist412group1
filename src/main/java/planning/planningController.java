@@ -22,7 +22,6 @@ public class planningController {
     
     /**
      * Constructor for the planninController class.
-     * @param 
      */
     public planningController() {
         

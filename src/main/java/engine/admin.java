@@ -15,11 +15,11 @@ public class admin extends user {
     
     /**
      * Constructor for the admin class.
-     * @param first first name
-     * @param last last name
-     * @param userName 
-     * @param password 
-     * @param email 
+     * @param first the first name
+     * @param last the last name
+     * @param userName the username
+     * @param password the password
+     * @param email the email
      * @param key key for admin access, security precaution
      */
     public admin(String first, String last, String userName, String password, String email, int key) {
@@ -37,7 +37,7 @@ public class admin extends user {
 
     /**
      * set the admins database key
-     * @param databasePersonalKey
+     * @param databasePersonalKey the database key
      */
     public void setDatabasePersonalKey(int databasePersonalKey) {
         this.databasePersonalKey = databasePersonalKey;

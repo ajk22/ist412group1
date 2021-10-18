@@ -20,11 +20,11 @@ public class event extends attraction {
     
     /**
      * Constructor for the event class.
-     * @param attractionName
-     * @param openingTime
-     * @param closingTime
-     * @param eventType
-     * @param eventCost
+     * @param attractionName the name of the attraction
+     * @param openingTime the opening time
+     * @param closingTime the closing time
+     * @param eventType the event type
+     * @param eventCost the event cost
      */
     public event(String attractionName, String openingTime, 
             String closingTime, String eventType, double eventCost) {
@@ -44,7 +44,7 @@ public class event extends attraction {
 
     /**
      * set the event type
-     * @param eventType
+     * @param eventType the event type
      */
     public void setEventType(String eventType) {
         this.eventType = eventType;
@@ -60,7 +60,7 @@ public class event extends attraction {
 
     /**
      * set the event cost
-     * @param eventCost
+     * @param eventCost the event cost
      */
     public void setEventCost(double eventCost) {
         this.eventCost = eventCost;

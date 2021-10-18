@@ -14,10 +14,10 @@ public class restaurant extends attraction {
 
     /**
      * Constructor for the restaurant class.
-     * @param attractionName
-     * @param openingTime
-     * @param closingTime
-     * @param foodType
+     * @param attractionName the attraction name
+     * @param openingTime the opening time
+     * @param closingTime the closing time
+     * @param foodType the food type
      */
     public restaurant(String attractionName, String openingTime, String closingTime, String foodType) {
         super(attractionName, openingTime, closingTime);

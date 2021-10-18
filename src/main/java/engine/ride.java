@@ -16,12 +16,12 @@ public class ride extends attraction {
     
     /**
      * Constructor for the ride class.
-     * @param attractionName
-     * @param openingTime
-     * @param closingTime
-     * @param rideType
-     * @param rideDuration
-     * @param intesityRating
+     * @param attractionName the attraction name
+     * @param openingTime the opening time
+     * @param closingTime the closing time
+     * @param rideType the ride type
+     * @param rideDuration the ride duration
+     * @param intensityRating the ride intensity rating
      */
     public ride(String attractionName, String openingTime, String closingTime,
             String rideType, double rideDuration, int intensityRating) {
@@ -42,7 +42,7 @@ public class ride extends attraction {
 
     /**
      * set the ride type
-     * @param rideType
+     * @param rideType the ride type
      */
     public void setRideType(String rideType) {
         this.rideType = rideType;
@@ -58,7 +58,7 @@ public class ride extends attraction {
 
     /**
      * set the ride duration
-     * @param rideDuration
+     * @param rideDuration the ride duration
      */
     public void setRideDuration(double rideDuration) {
         this.rideDuration = rideDuration;
@@ -74,7 +74,7 @@ public class ride extends attraction {
 
     /**
      * set the ride intensity rating
-     * @param intensityRating
+     * @param intensityRating the ride intensity rating
      */
     public void setIntensityRating(int intensityRating) {
         this.intensityRating = intensityRating;

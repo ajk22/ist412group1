@@ -15,10 +15,10 @@ public class shop extends attraction {
     
     /**
      * Constructor for the restaurant class.
-     * @param attractionName
-     * @param openingTime
-     * @param closingTime
-     * @param shopType
+     * @param attractionName the attraction name
+     * @param openingTime the opening time
+     * @param closingTime the closing time
+     * @param shopType the shop type
      */
     public shop(String attractionName, String openingTime, String closingTime, String shopType) {
         super(attractionName, openingTime, closingTime);
@@ -35,7 +35,7 @@ public class shop extends attraction {
 
     /**
      * set the type of shop
-     * @param shopType
+     * @param shopType the shop type
      */
     public void setShopType(String shopType) {
         this.shopType = shopType;

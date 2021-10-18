@@ -37,7 +37,7 @@ public class attraction {
 
     /**
      * set the attraction name
-     * @param attractionName
+     * @param attractionName the attraction name
      */
     public void setAttractionName(String attractionName) {
         this.attractionName = attractionName;
@@ -53,7 +53,7 @@ public class attraction {
 
     /**
      * set the attraction opening time
-     * @param openingTime
+     * @param openingTime the opening time
      */
     public void setOpeningTime(String openingTime) {
         this.openingTime = openingTime;
@@ -69,7 +69,7 @@ public class attraction {
 
     /**
      * set the attraction closing time
-     * @param closingTime
+     * @param closingTime the closing time
      */
     public void setClosingTime(String closingTime) {
         this.closingTime = closingTime;

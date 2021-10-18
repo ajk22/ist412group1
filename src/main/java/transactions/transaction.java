@@ -27,13 +27,13 @@ public class transaction {
     
     /**
      * Constructor for the transaction class.
-     * @param user
-     * @param date
-     * @param time
-     * @param items
-     * @param amount
-     * @param tax
-     * @param numOfItems
+     * @param user the user
+     * @param date the date
+     * @param time the time
+     * @param items the items
+     * @param amount the amount
+     * @param tax the tax
+     * @param numOfItems the number of items
      */
     public transaction(user user, String date, String time, String items, double amount, double tax, int numOfItems) {
         this.user = user;
@@ -53,7 +53,7 @@ public class transaction {
     }
 
     /**
-     * @param user
+     * @param user the user
      */
     public void setUser(user user) {
         this.user = user;
@@ -67,7 +67,7 @@ public class transaction {
     }
 
     /**
-     * @param date
+     * @param date the date
      */
     public void setDate(String date) {
         this.date = date;
@@ -81,7 +81,7 @@ public class transaction {
     }
 
     /**
-     * @param time
+     * @param time the time
      */
     public void setTime(String time) {
         this.time = time;
@@ -95,7 +95,7 @@ public class transaction {
     }
 
     /**
-     * @param items
+     * @param items the items
      */
     public void setItems(String items) {
         this.items = items;
@@ -109,7 +109,7 @@ public class transaction {
     }
 
     /**
-     * @param numOfItems
+     * @param numOfItems the number of items
      */
     public void setNumOfItems(int numOfItems) {
         this.numOfItems = numOfItems;
@@ -123,7 +123,7 @@ public class transaction {
     }
 
     /**
-     * @param amount
+     * @param amount the total amount of the sale
      */
     public void setAmount(double amount) {
         this.amount = amount;
@@ -137,13 +137,10 @@ public class transaction {
     }
 
     /**
-     * @param tax
+     * @param tax the sales tax amount on the sale
      */
     public void setTax(double tax) {
         this.tax = tax;
     }
-    
-    
-    
     
 }

@@ -33,7 +33,7 @@ public class transactionList {
     }
 
     /**
-     * @param transactionList
+     * @param transactionList the transaction list
      */
     public void setTransactionList(ArrayList<transaction> transactionList) {
         this.transactionList = transactionList;

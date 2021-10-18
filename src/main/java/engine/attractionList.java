@@ -32,7 +32,7 @@ public class attractionList {
 
     /**
      * set the attraction list
-     * @param attractionList
+     * @param attractionList the attraction list
      */
     public void setAttractionList(ArrayList<attraction> attractionList) {
         this.attractionList = attractionList;
@@ -40,7 +40,7 @@ public class attractionList {
     
     /**
      * add an attraction to the list
-     * @param attraction
+     * @param attraction the attraction
      */
     public void addAttraction(attraction attraction) {
         attractionList.add(attraction);

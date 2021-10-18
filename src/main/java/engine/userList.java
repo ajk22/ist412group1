@@ -8,7 +8,7 @@ package engine;
 import java.util.ArrayList;
 
     /** 
-     * this class is the list of user, username&password, recording for the userlist.
+     * this class is a list of users, username and password, etc.
      */
 public class userList{
 
@@ -39,7 +39,7 @@ public class userList{
     
     /**
      * adds a user to the list.
-     * @param user
+     * @param user the user
      */
     public void addUser(user user) {
         userList.add(user);

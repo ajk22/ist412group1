@@ -20,7 +20,7 @@ public class workerSchedule {
    
    /**
     * Constructor for the workerSchedule class.
-    * @param Schedule 
+    * @param Schedule the workers schedule
     */
     public workerSchedule(ArrayList<workerShift> Schedule) {
         this.Schedule = Schedule;

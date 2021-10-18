@@ -20,11 +20,11 @@ public class user {
 
     /**
      * Constructor for the user class.
-     * @param first
-     * @param last
-     * @param userName
-     * @param password
-     * @param email
+     * @param first first name
+     * @param last last name
+     * @param userName user name
+     * @param password password
+     * @param email email
      */
     public user(String first, String last, String userName, String password, String email) {
         
@@ -46,7 +46,7 @@ public class user {
     
     /**
      * sets the username
-     * @param userName
+     * @param userName the username
      */
     public void setUserName(String userName) {
         this.userName = userName;
@@ -54,7 +54,7 @@ public class user {
 
     /**
      * gets the password
-     * @return password
+     * @return password the password
      */
     public String getPassword() {
         return password;
@@ -62,7 +62,7 @@ public class user {
 
     /**
      * sets the password
-     * @param password
+     * @param password the password
      */
     public void setPassword(String password) {
         this.password = password;
@@ -70,7 +70,7 @@ public class user {
 
     /**
      * gets the first name
-     * @return first
+     * @return first 
      */
     public String getFirst() {
         return first;
@@ -78,7 +78,7 @@ public class user {
 
     /**
      * sets the first name
-     * @param first
+     * @param first the first name
      */
     public void setFirst(String first) {
         this.first = first;
@@ -94,7 +94,7 @@ public class user {
 
     /**
      * sets the last name
-     * @param last
+     * @param last the last name
      */
     public void setLast(String last) {
         this.last = last;
@@ -110,7 +110,7 @@ public class user {
 
     /**
      * sets the email
-     * @param email
+     * @param email the email
      */
     public void setEmail(String email) {
         this.email = email;

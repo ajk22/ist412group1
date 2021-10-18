@@ -16,13 +16,13 @@ public class worker extends user {
     
     /**
      * Constructor for the worker class.
-     * @param first
-     * @param last
-     * @param userName
-     * @param password
-     * @param email
-     * @param jobPosition
-     * @param salary
+     * @param first the first name
+     * @param last the last name
+     * @param userName the user name
+     * @param password the password
+     * @param email the email
+     * @param jobPosition the job position
+     * @param salary the salary
      */
     public worker(String first, String last, String userName, String password, 
             String email, String jobPosition, double salary) {
@@ -42,7 +42,7 @@ public class worker extends user {
 
     /**
      * sets the workers job position
-     * @param jobPosition
+     * @param jobPosition the job position
      */
     public void setJobPosition(String jobPosition) {
         this.jobPosition = jobPosition;
@@ -58,7 +58,7 @@ public class worker extends user {
 
     /**
      * sets the workers salary
-     * @param salary
+     * @param salary the salary
      */
     public void setSalary(double salary) {
         this.salary = salary;

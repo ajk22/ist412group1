@@ -48,7 +48,7 @@ public class engine {
 
     /**
      * set the attraction list
-     * @param attractionList
+     * @param attractionList the attraction list
      */
     public void setAttractionList(attractionList attractionList) {
         this.attractionList = attractionList;
@@ -64,7 +64,7 @@ public class engine {
 
     /**
      * set the user list
-     * @param userList
+     * @param userList the user list
      */
     public void setUserList(userList userList) {
         this.userList = userList;

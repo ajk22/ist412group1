@@ -28,7 +28,7 @@ public class parkInfo extends ride{
      * @param rideDuration The duration while on the ride
      * @param intensityRating The amount of intensity rated 1-10
      * @param displayedRide The ride that will be posted to the UI
-     * @param rideName 
+     * @param rideName the name of the ride
      */
     public parkInfo(String attractionName, String openingTime, String closingTime, String rideType, double rideDuration, int intensityRating,
             ride displayedRide, String rideName) {

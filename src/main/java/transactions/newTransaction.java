@@ -23,9 +23,9 @@ public class newTransaction {
     
     /**
      * Constructor for the newTransaction class.
-     * @param user
-     * @param transaction
-     * @param transactionList
+     * @param user the user
+     * @param transaction the transaction
+     * @param transactionList the transaction list
      */
     public newTransaction(user user, transaction transaction, transactionList transactionList) {
         this.user = user;

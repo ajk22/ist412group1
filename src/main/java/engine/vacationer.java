@@ -17,11 +17,11 @@ public class vacationer extends user {
     
     /**
      * Constructor for the vacationer class.
-     * @param first
-     * @param last
-     * @param userName
-     * @param password
-     * @param email
+     * @param first the first name
+     * @param last the last name
+     * @param userName the user name
+     * @param password the password
+     * @param email the email
      */
     public vacationer(String first, String last, String userName, String password, String email) {
         super(first, last, userName, password, email);

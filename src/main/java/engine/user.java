@@ -116,11 +116,17 @@ public class user {
         this.email = email;
     }
     
+    @Override
+    /**
+     * to string method for user
+     * @return string for user
+     */
+    public String toString() {
+        
+        return this.getFirst() + ", " + this.getLast() + ", " + this.getUserName() + ", " + 
+                this.getPassword() + ", " + this.getEmail();
+    }
 
-    
-
-
-    
     
 } 
    

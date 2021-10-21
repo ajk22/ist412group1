@@ -40,6 +40,14 @@ public class shop extends attraction {
     public void setShopType(String shopType) {
         this.shopType = shopType;
     }
-
+    
+    @Override
+    /**
+     * to string method for shop
+     * @return string for shop
+     */
+    public String toString() {
+        return "Shop, " + super.toString() + ", " + this.getShopType();
+    }
   
 }

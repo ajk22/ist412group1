@@ -80,4 +80,14 @@ public class ride extends attraction {
         this.intensityRating = intensityRating;
     }
     
+    @Override
+    /**
+     * to string method for ride
+     * @return string for ride
+     */
+    public String toString() {
+        return "Ride, " + super.toString() + ", " + 
+                this.getRideType() + ", " + this.getRideDuration() + ", " + this.getIntensityRating();
+    }
+    
 }

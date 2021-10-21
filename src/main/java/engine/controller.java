@@ -34,6 +34,8 @@ public class controller {
     public planningController planningController;
     public transactionsController transactionsController;
     public workerController workerController;
+    private userList userList;
+    private attractionList attractionList;
     
     /**
      * Constructor for the controller class.
@@ -48,5 +50,43 @@ public class controller {
         this.adminController = new adminController();
         this.parkInfoController = new parkInfoController();
         this.transactionsController = new transactionsController();
+        
+        this.userList = engine.getUserList();
+        this.attractionList = engine.getAttractionList();
     }
+
+    /**
+     * get the user list and pass off into other packages
+     * @return the userList
+     */
+    public userList getUserList() {
+        return userList;
+    }
+
+    /**
+     * set the user list if it is updated
+     * @param userList the userList to set
+     */
+    public void setUserList(userList userList) {
+        this.userList = userList;
+    }
+
+    /**
+     * get the attraction list and pass off into other packages
+     * @return the attractionList
+     */
+    public attractionList getAttractionList() {
+        return attractionList;
+    }
+
+    /**
+     * set the attraction list if it is updated
+     * @param attractionList the attractionList to set
+     */
+    public void setAttractionList(attractionList attractionList) {
+        this.attractionList = attractionList;
+    }
+    
+    
+    
 }

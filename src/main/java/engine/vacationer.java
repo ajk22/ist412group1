@@ -44,4 +44,17 @@ public class vacationer extends user {
         this.transactionList = transactionList;
     }
     
+    @Override
+    /**
+     * to string method for vacationer
+     * @return string for vacationer
+     */
+    public String toString() {
+        
+        String temp = super.toString();
+        String type = "Vacationer, ";
+        
+        return type.concat(temp);
+    }
+    
 }

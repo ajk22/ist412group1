@@ -64,4 +64,17 @@ public class worker extends user {
         this.salary = salary;
     }
     
+    @Override
+    /**
+     * to string method for worker
+     * @return string for worker
+     */
+    public String toString() {
+        
+        String temp = super.toString();
+        String type = "Worker, ";
+        
+        return type.concat(temp) + ", " + this.getJobPosition() + ", " + this.getSalary();
+    }
+    
 }

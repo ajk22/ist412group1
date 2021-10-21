@@ -75,4 +75,13 @@ public class attraction {
         this.closingTime = closingTime;
     }
     
+    @Override
+    /**
+     * to string method for attraction
+     * @return string for attraction
+     */
+    public String toString() {
+        return this.getAttractionName() + ", " + this.getOpeningTime() + ", " + this.getClosingTime();
+    }
+    
 }

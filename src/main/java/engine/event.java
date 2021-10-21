@@ -65,4 +65,13 @@ public class event extends attraction {
     public void setEventCost(double eventCost) {
         this.eventCost = eventCost;
     }
+    
+    @Override
+    /**
+     * to string method for event
+     * @return string for event
+     */
+    public String toString() {
+        return "Event, " + super.toString() + ", " + this.getEventType() + ", " + this.getEventCost();
+    }
 }

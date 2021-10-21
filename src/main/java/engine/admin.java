@@ -43,5 +43,18 @@ public class admin extends user {
         this.databasePersonalKey = databasePersonalKey;
     }
     
+    @Override
+    /**
+     * to string method for admin
+     * @return string for admin
+     */
+    public String toString() {
+        
+        String temp = super.toString();
+        String type = "Admin, ";
+        
+        return type.concat(temp) + ", " + this.getDatabasePersonalKey();
+    }
+    
     
 }

@@ -39,6 +39,15 @@ public class restaurant extends attraction {
     public void setFoodType(String foodType) {
         this.foodType = foodType;
     }
+    
+    @Override
+    /**
+     * to string method for restaurant
+     * @return string for restaurant
+     */
+    public String toString() {
+        return "Restaurant, " + super.toString() + ", " + this.getFoodType();
+    }
 
     
 }

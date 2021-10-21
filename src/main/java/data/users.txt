@@ -1,1 +1,5 @@
+Vacationer, Alex, K, alexk123, password123, alexk@gmail.com
+Vacationer, Neil, P, neilp123, password123, neilp@gmail.com
+Vacationer, Michael, C, michaelc123, password123, michaelc@gmail.com
+Admin, Professor, Smith, theprof123, password123, professorsmith@gmail.com, 12345
 

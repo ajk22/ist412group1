@@ -1,1 +1,9 @@
-
+Ride, Racers, 10:00 am, 7:00 pm, Roller Coaster, 96.5, 7
+Ride, Ferris Wheel, 10:00 am, 7:00 pm, Gentle Ride, 180, 2
+Ride, Drop Tower, 10:00 am, 5:00 pm, Thrill Ride, 180, 8
+Ride, Log Jammer, 10:00 am, 5:00 pm, Water Ride, 120.5, 5
+Restaurant, Pizza World, 11:00 am, 7:00 pm, Pizza
+Restaurant, Ice Cream Stand, 11:00 am, 7:00 pm, Dessert
+Shop, Info Center, 10:00 am, 7:00 pm, Park Information
+Shop, Wally World, 10:00 am, 7:00 pm, Souvenirs
+Shop, Basketball Challenge, 12:00 pm, 4:00 pm, Game

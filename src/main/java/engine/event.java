@@ -17,6 +17,7 @@ public class event extends attraction {
     
     private String eventType;
     private double eventCost;
+    private final String objectIdentifier;
     
     /**
      * Constructor for the event class.
@@ -32,6 +33,7 @@ public class event extends attraction {
         super(attractionName, openingTime, closingTime);
         this.eventType = eventType;
         this.eventCost = eventCost;
+        this.objectIdentifier = "Event";
     }
 
     /**
@@ -73,5 +75,13 @@ public class event extends attraction {
      */
     public String toString() {
         return "Event, " + super.toString() + ", " + this.getEventType() + ", " + this.getEventCost();
+    }
+
+    @Override
+    /**
+     * @return the objectIdentifier
+     */
+    public String getObjectIdentifier() {
+        return objectIdentifier;
     }
 }

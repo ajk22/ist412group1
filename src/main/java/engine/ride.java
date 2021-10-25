@@ -13,6 +13,7 @@ public class ride extends attraction {
     private String rideType;
     private double rideDuration;
     private int intensityRating;
+    private final String objectIdentifier;
     
     /**
      * Constructor for the ride class.
@@ -30,6 +31,7 @@ public class ride extends attraction {
         this.rideType = rideType;
         this.rideDuration = rideDuration;
         this.intensityRating = intensityRating;
+        this.objectIdentifier = "Ride";
     }
 
     /**
@@ -88,6 +90,18 @@ public class ride extends attraction {
     public String toString() {
         return "Ride, " + super.toString() + ", " + 
                 this.getRideType() + ", " + this.getRideDuration() + ", " + this.getIntensityRating();
+    }
+    
+    public String TrueToString() {
+        return super.toString() + ", " + this.getRideType() + ", " + this.getRideDuration() + ", " + this.getIntensityRating();
+    }
+
+    @Override
+    /**
+     * @return the objectIdentifer
+     */
+    public String getObjectIdentifier() {
+        return objectIdentifier;
     }
     
 }

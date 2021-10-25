@@ -6,6 +6,8 @@
 package engine;
 
 import admin.adminController;
+import admin.attractionDataUI;
+import javax.swing.table.TableModel;
 import login.loginController;
 import parkinfo.parkInfoController;
 import planning.planningController;
@@ -36,23 +38,27 @@ public class controller {
     public workerController workerController;
     private userList userList;
     private attractionList attractionList;
+    private attractionDataUI attractionDataUI;
     
     /**
      * Constructor for the controller class.
      */
     public controller() {
         this.engine = new engine();
-        this.mainUI = new mainUI();
+        this.mainUI = new mainUI(this);
+        
+        this.userList = engine.getUserList();
+        this.attractionList = engine.getAttractionList();
+        
         this.startUI = new startUI();
         this.loginController = new loginController();
         this.workerController = new workerController();
         this.planningController = new planningController();
-        this.adminController = new adminController();
         this.parkInfoController = new parkInfoController();
         this.transactionsController = new transactionsController();
+        this.adminController = new adminController(this, this.attractionList);
         
-        this.userList = engine.getUserList();
-        this.attractionList = engine.getAttractionList();
+        mainUI.setVisible(true);
     }
 
     /**
@@ -86,7 +92,12 @@ public class controller {
     public void setAttractionList(attractionList attractionList) {
         this.attractionList = attractionList;
     }
-    
-    
+
+    /**
+     * admin menu selected from the main menu.
+     */
+    public void adminSelectedFromMain() {
+        adminController.setVisible();
+    }  
     
 }

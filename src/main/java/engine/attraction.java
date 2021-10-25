@@ -84,4 +84,9 @@ public class attraction {
         return this.getAttractionName() + ", " + this.getOpeningTime() + ", " + this.getClosingTime();
     }
     
+    public String getObjectIdentifier() {
+        
+        return "";
+    }
+    
 }

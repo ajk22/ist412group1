@@ -11,6 +11,7 @@ package engine;
  */
 public class restaurant extends attraction {
     private String foodType;
+    private final String objectIdentifier;
 
     /**
      * Constructor for the restaurant class.
@@ -22,6 +23,7 @@ public class restaurant extends attraction {
     public restaurant(String attractionName, String openingTime, String closingTime, String foodType) {
         super(attractionName, openingTime, closingTime);
         this.foodType = foodType;
+        this.objectIdentifier = "Restaurant";
     }
 
     /**
@@ -47,6 +49,14 @@ public class restaurant extends attraction {
      */
     public String toString() {
         return "Restaurant, " + super.toString() + ", " + this.getFoodType();
+    }
+    
+    @Override
+    /**
+     * @return the objectIdentifer
+     */
+    public String getObjectIdentifier() {
+        return objectIdentifier;
     }
 
     

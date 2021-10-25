@@ -31,7 +31,14 @@ Steve:
 Worker
 Transaction
 
-Neil:
-parkInfo
-planning
+Design Patterns:
+
+Neil Porterfield
+Group 1
+Object Oriented pattern: Singleton
+Package: parkInfo
+Classes: SingletonMap (ParkMap - private constructor getInstance - return method to get the Singleton Object)
+UI pattern: Input Fields
+Package: planning
+Classes: planningInput (UI frames that add the functionality for users to enter a plan they would like to schedule)
 

@@ -6,6 +6,7 @@
 package login;
 
 import engine.controller;
+import engine.userList;
 
 /**
  *
@@ -17,6 +18,7 @@ import engine.controller;
 public class loginController {
     
     loginUI loginUI;
+    controller controller;
     
     /**
     * This will be the constructor for the loginController class.
@@ -25,5 +27,12 @@ public class loginController {
         this.loginUI = new loginUI();
     }
     
+    public void setControllerList(controller controller) {
+        this.controller = controller;
+    }
+    
+    public userList getUserList() {
+        return controller.getUserList();
+    }
     
 }

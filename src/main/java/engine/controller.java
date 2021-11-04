@@ -60,6 +60,8 @@ public class controller {
         this.adminController = new adminController(this, this.attractionList);
         
         mainUI.setVisible(true);
+        
+        setControllers();
     }
 
     /**
@@ -104,6 +106,10 @@ public class controller {
     public void newPark(String[] tempArray, attractionList attractionlistTemp) {
         System.out.println(tempArray[0] + " " + attractionlistTemp.getAttractionList().get(0).toString());
         parkInfoController.newPark(tempArray, attractionlistTemp);
+    }
+
+    public void setControllers() {
+        loginController.setControllerList(this);
     }
     
 }

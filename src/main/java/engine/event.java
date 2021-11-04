@@ -26,11 +26,12 @@ public class event extends attraction {
      * @param closingTime the closing time
      * @param eventType the event type
      * @param eventCost the event cost
+     * @param parkName the park that attraction is in
      */
-    public event(String attractionName, String openingTime, 
+    public event(String parkName, String attractionName, String openingTime, 
             String closingTime, String eventType, double eventCost) {
         
-        super(attractionName, openingTime, closingTime);
+        super(parkName, attractionName, openingTime, closingTime);
         this.eventType = eventType;
         this.eventCost = eventCost;
         this.objectIdentifier = "Event";

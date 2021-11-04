@@ -14,17 +14,20 @@ public class attraction {
     private String attractionName;
     private String openingTime;
     private String closingTime;
+    private String parkName;
     
     /**
      * Constructor for the attraction class.
      * @param attractionName the name of the attraction
      * @param openingTime the opening time of the attraction
      * @param closingTime the closing time of the attraction
+     * @param parkName
      */
-    public attraction(String attractionName, String openingTime, String closingTime) {
+    public attraction(String parkName, String attractionName, String openingTime, String closingTime) {
         this.attractionName = attractionName;
         this.closingTime = closingTime;
         this.openingTime = openingTime;
+        this.parkName = parkName;
     }
 
     /**
@@ -75,18 +78,33 @@ public class attraction {
         this.closingTime = closingTime;
     }
     
+    /**
+     * @return the parkName
+     */
+    public String getParkName() {
+        return parkName;
+    }
+
+    /**
+     * @param parkName the parkName to set
+     */
+    public void setParkName(String parkName) {
+        this.parkName = parkName;
+    }
+    
     @Override
     /**
      * to string method for attraction
      * @return string for attraction
      */
     public String toString() {
-        return this.getAttractionName() + ", " + this.getOpeningTime() + ", " + this.getClosingTime();
+        return this.getParkName() + ", " + this.getAttractionName() + ", " + this.getOpeningTime() + ", " + this.getClosingTime();
     }
     
     public String getObjectIdentifier() {
         
         return "";
     }
+
     
 }

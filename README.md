@@ -42,3 +42,17 @@ UI pattern: Input Fields
 Package: planning
 Classes: planningInput (UI frames that add the functionality for users to enter a plan they would like to schedule)
 
+Use Case 1:
+
+Login Functionality + UI (Michael)
+
+Drop down for park selection (5 parks) (Neil & Steve)
+After park selection ->
+Display: (Alex)
+1.General info 
+2.Ride List
+3.Shop List
+4.Restaurant List
+5.Event List
+
+Extra data field for parkInfo.txt (Alex)

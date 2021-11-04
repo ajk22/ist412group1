@@ -19,9 +19,10 @@ public class restaurant extends attraction {
      * @param openingTime the opening time
      * @param closingTime the closing time
      * @param foodType the food type
+     * @param parkName the park that attraction is in
      */
-    public restaurant(String attractionName, String openingTime, String closingTime, String foodType) {
-        super(attractionName, openingTime, closingTime);
+    public restaurant(String parkName, String attractionName, String openingTime, String closingTime, String foodType) {
+        super(parkName, attractionName, openingTime, closingTime);
         this.foodType = foodType;
         this.objectIdentifier = "Restaurant";
     }

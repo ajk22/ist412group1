@@ -23,11 +23,12 @@ public class ride extends attraction {
      * @param rideType the ride type
      * @param rideDuration the ride duration
      * @param intensityRating the ride intensity rating
+     * @param parkName the park that attraction is in
      */
-    public ride(String attractionName, String openingTime, String closingTime,
+    public ride(String parkName, String attractionName, String openingTime, String closingTime,
             String rideType, double rideDuration, int intensityRating) {
         
-        super(attractionName, openingTime, closingTime);
+        super(parkName, attractionName, openingTime, closingTime);
         this.rideType = rideType;
         this.rideDuration = rideDuration;
         this.intensityRating = intensityRating;
@@ -92,6 +93,10 @@ public class ride extends attraction {
                 this.getRideType() + ", " + this.getRideDuration() + ", " + this.getIntensityRating();
     }
     
+    /**
+     * true to string method for ride
+     * @return string for ride
+     */
     public String TrueToString() {
         return super.toString() + ", " + this.getRideType() + ", " + this.getRideDuration() + ", " + this.getIntensityRating();
     }

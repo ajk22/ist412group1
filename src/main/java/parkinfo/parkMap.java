@@ -26,9 +26,10 @@ public class parkMap extends ride{
      * @param rideType The type of ride the attraction is
      * @param rideDuration The duration while on the ride
      * @param intensityRating The amount of intensity rated 1-10
+     * @param parkName the park name
      */
-    public parkMap(String attractionName, String openingTime, String closingTime, String rideType, double rideDuration, int intensityRating) {
-        super(attractionName, openingTime, closingTime, rideType, rideDuration, intensityRating);
+    public parkMap(String parkName, String attractionName, String openingTime, String closingTime, String rideType, double rideDuration, int intensityRating) {
+        super(parkName, attractionName, openingTime, closingTime, rideType, rideDuration, intensityRating);
     }
     
     public void addRideToMap(){

@@ -40,7 +40,7 @@ public final class tests1 {
     }
     
     public void test1() {
-        attraction ride1 = new ride("Ferris Wheel", "10:00 AM", "10:00 PM", 
+        attraction ride1 = new ride("Park1", "Ferris Wheel", "10:00 AM", "10:00 PM", 
             "Gentle", 110.5, 1);
         if (ride1.getAttractionName().equals("Ferris Wheel")) {
             System.out.println("Test 1 PASSED!");
@@ -77,10 +77,10 @@ public final class tests1 {
     }
     
     public void test4() {
-        attraction ride1 = new ride("Ferris Wheel", "10:00 AM", "10:00 PM", 
+        attraction ride1 = new ride("Park1", "Ferris Wheel", "10:00 AM", "10:00 PM", 
             "Gentle", 110.5, 1);
-        attraction restaurant1 = new restaurant("Ice Cream Stand", "12:00 PM", "10:00 PM", "Dessert");
-        attraction event1 = new event("Halloween Parade", "12:00 PM", "1:00 PM", "Parade", 0);
+        attraction restaurant1 = new restaurant("Park 1", "Ice Cream Stand", "12:00 PM", "10:00 PM", "Dessert");
+        attraction event1 = new event("Park 1", "Halloween Parade", "12:00 PM", "1:00 PM", "Parade", 0);
         attractionList attractionList = new attractionList();
         attractionList.addAttraction(ride1);
         attractionList.addAttraction(restaurant1);

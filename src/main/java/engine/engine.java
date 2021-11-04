@@ -22,21 +22,24 @@ public class engine {
     
     public attractionList attractionList;
     private userList userList;
+    public controller controller;
     
     /**
      * Constructor for the attractionList class.
+     * @param controller
      */
-    public engine() {
+    public engine(controller controller) {
         
         this.userList = new userList();
         this.attractionList = new attractionList();
+        this.controller = controller;
         startEngine();
     }
 
     /**
      * starts the engine... loads data
      */
-    private void startEngine() {        
+    public void startEngine() {        
         //TO-DO
         //1. Implement methods to load and parse data files to create objects
         //2. Implement methods to save data
@@ -52,6 +55,12 @@ public class engine {
         System.out.println("file loaded...");
         ArrayList<String> attractionDataStrings = fileIterator(attractionsFile);
         translateAttractions(attractionDataStrings);
+        
+        File parksFile = new File("src/main/java/data/parks.txt");
+        System.out.println("file loaded...");
+        ArrayList<String> parksStrings = fileIterator(parksFile);
+        translateParks(parksStrings);
+        
         
     }
     
@@ -162,6 +171,38 @@ public class engine {
         }       
     }
     
+    public void translateParks(ArrayList<String> parksStrings) {
+        int temp = parksStrings.size();
+        
+        for (int i = 0; i < temp; i++) {
+            String tempString = parksStrings.get(i);
+            String[] tempArray = tempString.split(", ");
+            
+            newPark(tempArray);
+        }
+        
+    }
+    
+    public void newPark(String[] tempArray) {
+        System.out.println(tempArray[0]);
+        controller.newPark(tempArray, getParkAttractions(tempArray[0]));
+    }
+    
+    public attractionList getParkAttractions(String parkName) {
+        
+        attractionList parkAttractionsTemp = new attractionList();
+        parkAttractionsTemp.getAttractionList().clear();
+        
+        for (int i = 0; i < attractionList.getAttractionList().size(); i++) {
+            if (attractionList.getAttractionList().get(i).getParkName().equals(parkName)) {
+                parkAttractionsTemp.addAttraction(attractionList.getAttractionList().get(i));
+                System.out.println(attractionList.getAttractionList().get(i).toString());
+            }
+        }
+        
+        return parkAttractionsTemp;
+    }
+    
     /**
      * PART OF ITERATOR PATTERN - Alex Kinser
      * translate the user to create an object
@@ -208,7 +249,7 @@ public class engine {
     private attraction translateShop(String temp) {
         String[] tempArray = temp.split(", ");
         
-        return new shop(tempArray[0], tempArray[1], tempArray[2], tempArray[3]);
+        return new shop(tempArray[0], tempArray[1], tempArray[2], tempArray[3], tempArray[4]);
     }
 
     /**
@@ -219,10 +260,10 @@ public class engine {
     private attraction translateRide(String temp) {
         String[] tempArray = temp.split(", ");
         
-        double duration = Double.parseDouble(tempArray[4]);
-        int intensity = Integer.parseInt(tempArray[5]);
+        double duration = Double.parseDouble(tempArray[5]);
+        int intensity = Integer.parseInt(tempArray[6]);
         
-        return new ride(tempArray[0], tempArray[1], tempArray[2], tempArray[3], duration, intensity);
+        return new ride(tempArray[0], tempArray[1], tempArray[2], tempArray[3], tempArray[4], duration, intensity);
     }
 
     /**
@@ -233,7 +274,7 @@ public class engine {
     private attraction translateRestaurant(String temp) {
         String[] tempArray = temp.split(", ");
         
-        return new restaurant(tempArray[0], tempArray[1], tempArray[2], tempArray[3]);
+        return new restaurant(tempArray[0], tempArray[1], tempArray[2], tempArray[3], tempArray[4]);
     }
 
     /**
@@ -244,9 +285,9 @@ public class engine {
     private attraction translateEvent(String temp) {
         String[] tempArray = temp.split(", ");
         
-        double cost = Double.parseDouble(tempArray[4]);
+        double cost = Double.parseDouble(tempArray[5]);
         
-        return new event(tempArray[0], tempArray[1], tempArray[2], tempArray[3], cost);
+        return new event(tempArray[0], tempArray[1], tempArray[2], tempArray[3], tempArray[4], cost);
     }
     
 

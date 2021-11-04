@@ -5,36 +5,35 @@
  */
 package parkinfo;
 
+import engine.attractionList;
 import java.util.Scanner;
 import engine.ride;
 /**
  * This will be used by ParkInfoUI to retrieve info to feed to the
  * user interface about the park and relevant information.
  */
-public class parkInfo extends ride{
+public class parkInfo {
     
-    public ride displayedRide;
-    public String rideName;
+    public String parkName;
+    public String openingTime;
+    public String closingTime;
+    public attractionList attractionList;
     //to be used by parkInfoUI
     //functionality to retrieve information to feed the UI
     //retrieve attraction name, attraction type, time it is open, location, etc...
     //...
     /**
      * This will be the constructor for the park info class.
-     * @param attractionName The name of the attraction
-     * @param openingTime Time of opening for the attraction
-     * @param closingTime Time of closing for the attraction
-     * @param rideType The type of ride the attraction is
-     * @param rideDuration The duration while on the ride
-     * @param intensityRating The amount of intensity rated 1-10
-     * @param displayedRide The ride that will be posted to the UI
-     * @param rideName the name of the ride
+     * @param parkName The name of the park
+     * @param openingTime Time of opening for the park
+     * @param closingTime Time of closing for the park
+     * @param attractionList the list of the attractions at the park
      */
-    public parkInfo(String attractionName, String openingTime, String closingTime, String rideType, double rideDuration, int intensityRating,
-            ride displayedRide, String rideName) {
-        super(attractionName, openingTime, closingTime, rideType, rideDuration, intensityRating);
-        this.displayedRide = displayedRide;
-        this.rideName = rideName;
+    public parkInfo(String parkName, String openingTime, String closingTime, attractionList attractionList) {
+        this.attractionList = attractionList;
+        this.closingTime = closingTime;
+        this.openingTime = openingTime;
+        this.parkName = parkName;
     }
     
     /**
@@ -42,9 +41,10 @@ public class parkInfo extends ride{
      */
     //retrieve information about the ride you want to display
     public void retrieveInfo(){
+        //Could be deleted? What is this used for? - Alex
         System.out.println("Please enter the ride you would like to retrieve information about:");
         Scanner myRide = new Scanner(System.in);
-        rideName = myRide.nextLine();
+        //rideName = myRide.nextLine();
     }
     
     /**
@@ -52,6 +52,7 @@ public class parkInfo extends ride{
      * @param rideToDisplay The ride that will be displayed to the UI
      */
     public void condenseInfo(ride rideToDisplay){
+        //Could be deleted? What is this used for? - Alex
     }
     
     /**
@@ -60,6 +61,7 @@ public class parkInfo extends ride{
      * @return The name of the ride
      */
     public String displayInfo(String ride){
+        //Could be deleted? What is this used for? - Alex
         return "";
     }
     

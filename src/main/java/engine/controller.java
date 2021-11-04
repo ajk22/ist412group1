@@ -44,11 +44,7 @@ public class controller {
      * Constructor for the controller class.
      */
     public controller() {
-        this.engine = new engine();
         this.mainUI = new mainUI(this);
-        
-        this.userList = engine.getUserList();
-        this.attractionList = engine.getAttractionList();
         
         this.startUI = new startUI();
         this.loginController = new loginController();
@@ -56,6 +52,11 @@ public class controller {
         this.planningController = new planningController();
         this.parkInfoController = new parkInfoController();
         this.transactionsController = new transactionsController();
+        
+        this.engine = new engine(this);
+        this.userList = engine.getUserList();
+        this.attractionList = engine.getAttractionList();
+        
         this.adminController = new adminController(this, this.attractionList);
         
         mainUI.setVisible(true);
@@ -99,5 +100,10 @@ public class controller {
     public void adminSelectedFromMain() {
         adminController.setVisible();
     }  
+    
+    public void newPark(String[] tempArray, attractionList attractionlistTemp) {
+        System.out.println(tempArray[0] + " " + attractionlistTemp.getAttractionList().get(0).toString());
+        parkInfoController.newPark(tempArray, attractionlistTemp);
+    }
     
 }

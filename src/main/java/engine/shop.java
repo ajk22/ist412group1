@@ -20,9 +20,10 @@ public class shop extends attraction {
      * @param openingTime the opening time
      * @param closingTime the closing time
      * @param shopType the shop type
+     * @param parkName the park that attraction is in
      */
-    public shop(String attractionName, String openingTime, String closingTime, String shopType) {
-        super(attractionName, openingTime, closingTime);
+    public shop(String parkName, String attractionName, String openingTime, String closingTime, String shopType) {
+        super(parkName, attractionName, openingTime, closingTime);
         this.shopType = shopType;
         this.objectIdentifier = "Shop";
     }

@@ -28,6 +28,20 @@ public class userList{
     public ArrayList<user> getUserList() {
         return userList;
     }
+    
+    /**
+     * gets a specific user
+     * @return the user
+     */
+    public user getUser(String username) {
+        for(user user: userList) {
+            if (user.userName == username) {
+                return user;
+            }
+        }
+        
+        return null;
+    }
 
     /**
      * sets the user list

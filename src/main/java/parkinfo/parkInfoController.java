@@ -6,6 +6,8 @@
 package parkinfo;
 
 import engine.attractionList;
+import engine.controller;
+import javax.swing.table.TableModel;
 
 /**
  *
@@ -18,15 +20,27 @@ public class parkInfoController {
     
     parkInfoUI parkInfoUI;
     parkMapUI parkMapUI;
-    private parksList parksList;
+    parksList parksList;
+    parkAttractionsTableModel parkAttractionsTableModel;
+    controller controller;
+    parkRestaurantTableModel parkRestaurantTableModel;
+    parkRideTableModel parkRideTableModel;
+    parkShopTableModel parkShopTableModel;
+    parkEventTableModel parkEventTableModel;
     
     /**
      * Constructor for the parkInfoController class.
+     * @param controller the engine controller
      */
-    public parkInfoController() {
-        this.parkInfoUI = new parkInfoUI();
+    public parkInfoController(controller controller) {
+        this.controller = controller;
+        //null pointer caused by class being called too early
+        this.parksList = new parksList(this);
+        this.controller.setParkInfoController(this);
+        parksList.loadParks();
+        this.parkAttractionsTableModel = new parkAttractionsTableModel(this, "Park 1", this.parksList);
+        this.parkInfoUI = new parkInfoUI(this, parkAttractionsTableModel, "Park 1");
         this.parkMapUI = new parkMapUI();
-        this.parksList = new parksList();
     }
 
     /**
@@ -34,7 +48,7 @@ public class parkInfoController {
      * @param attractionList the list of attractions in the park
      */
     public void newPark(String[] tempArray, attractionList attractionList) {
-        getParksList().addPark(tempArray, attractionList);
+        parksList.addPark(tempArray, attractionList);
     }
 
     /**
@@ -51,5 +65,32 @@ public class parkInfoController {
         this.parksList = parksList;
     }
     
+    public void loadParks() {
+        controller.loadParks();
+    }  
+
+    public void setVisible() {
+        parkInfoUI.setVisible(true);
+    }
+    
+    public parkRideTableModel setAsRidesTableModel(String identifier) {
+        this.parkRideTableModel = new parkRideTableModel(this, identifier, this.parksList);
+        return parkRideTableModel;
+    }
+    
+    public parkEventTableModel setAsEventsTableModel(String identifier) {
+        this.parkEventTableModel = new parkEventTableModel(this, identifier, this.parksList);
+        return parkEventTableModel;
+    }
+    
+    public parkShopTableModel setAsShopTableModel(String identifier) {
+        this.parkShopTableModel = new parkShopTableModel(this, identifier, this.parksList);
+        return parkShopTableModel;
+    }
+    
+    public parkRestaurantTableModel setAsRestaurantTableModel(String identifier) {
+        this.parkRestaurantTableModel = new parkRestaurantTableModel(this, identifier, this.parksList);
+        return parkRestaurantTableModel;
+    }
     
 }

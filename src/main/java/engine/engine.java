@@ -54,14 +54,14 @@ public class engine {
         File attractionsFile = new File("src/main/java/data/parkInfo.txt");
         System.out.println("file loaded...");
         ArrayList<String> attractionDataStrings = fileIterator(attractionsFile);
-        translateAttractions(attractionDataStrings);
-        
+        translateAttractions(attractionDataStrings);             
+    }
+    
+    public void loadParks() {
         File parksFile = new File("src/main/java/data/parks.txt");
         System.out.println("file loaded...");
         ArrayList<String> parksStrings = fileIterator(parksFile);
         translateParks(parksStrings);
-        
-        
     }
     
     /**
@@ -178,6 +178,7 @@ public class engine {
             String tempString = parksStrings.get(i);
             String[] tempArray = tempString.split(", ");
             
+            System.out.println("Adding new park");
             newPark(tempArray);
         }
         

@@ -188,7 +188,7 @@ public class mainUI extends JFrame {
      * Park info menu selected.
      */
     private void parkInfoSelected() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        controller.parkInfoSelectedFromMain();
     }
 
     /**

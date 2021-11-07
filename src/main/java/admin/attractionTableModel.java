@@ -24,7 +24,6 @@ public class attractionTableModel extends AbstractTableModel {
     */
     attractionTableModel(attractionList attractionList) {
         this.attractionList = attractionList.getAttractionList();
-        System.out.println("testing...");
     }
 
     @Override

@@ -18,7 +18,6 @@ import transactions.transaction;
 import transactions.transactionList;
 import planning.plan;
 import planning.plansList;
-import login.login;
 
 /**
  *
@@ -36,7 +35,6 @@ public final class tests1 {
         test7();
         test8();
         test9();
-        test10();
     }
     
     public void test1() {
@@ -195,17 +193,4 @@ public final class tests1 {
             System.out.println("Test 9 FAILED!");
         }
     }
-    
-    public void test10() {
-        login login1 = new login("user123", "password");
-        login login2 = new login("user123", "abc123");
-        
-        if (login1.getUsername().equals(login2.getUsername())) {
-            System.out.println("Test 10 PASSED!");
-        } else {
-            System.out.println("Test 10 FAILED!");
-        }
-        
-    }
-    
 }

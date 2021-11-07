@@ -8,7 +8,7 @@ package engine;
 import admin.adminController;
 import admin.attractionDataUI;
 import javax.swing.table.TableModel;
-import login.loginController;
+import login.loginUI;
 import parkinfo.parkInfoController;
 import planning.planningController;
 import transactions.transactionsController;
@@ -30,7 +30,7 @@ public class controller {
     public mainUI mainUI;
     //startUI is the opening screen, the first UI presented to the user
     public startUI startUI;
-    public loginController loginController;
+    public loginUI loginUI;
     public parkInfoController parkInfoController;
     public adminController adminController;
     public planningController planningController;
@@ -44,10 +44,10 @@ public class controller {
      * Constructor for the controller class.
      */
     public controller() {
+        this.loginUI = new loginUI(this);
         this.mainUI = new mainUI(this);
         
         this.startUI = new startUI();
-        this.loginController = new loginController();
         this.workerController = new workerController();
         this.planningController = new planningController();
         this.transactionsController = new transactionsController();
@@ -59,9 +59,8 @@ public class controller {
         this.adminController = new adminController(this, this.attractionList);
         this.parkInfoController = new parkInfoController(this);
         
-        mainUI.setVisible(true);
-        
-        setControllers();
+        loginUI.populateUsernameList(getUserList());
+        loginUI.setVisible(true);
     }
 
     /**
@@ -122,5 +121,6 @@ public class controller {
     public void setParkInfoController(parkInfoController aThis) {
         this.parkInfoController = aThis;
     }
+
     
 }

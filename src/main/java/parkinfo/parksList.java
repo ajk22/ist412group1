@@ -14,15 +14,41 @@ import java.util.ArrayList;
  */
 public class parksList {
     
-    public ArrayList<parkInfo> parksList;
+    private ArrayList<parkInfo> parksList;
+    public parkInfoController parkInfoController;
     
-    public parksList() {
+    public parksList(parkInfoController parkInfoController) {
         this.parksList = new ArrayList<>();
+        this.parkInfoController = parkInfoController;
     }
     
     public void addPark(String[] park, attractionList attractionList) {
-        parksList.add(new parkInfo(park[0], park[1], park[2], attractionList));
+       ArrayList<parkInfo> tempList = new ArrayList<>();
+       tempList = getParksList();
+       tempList.add(new parkInfo(park[0], park[1], park[2], attractionList));
+       setParksList(tempList);
+        
+        System.out.println("Park Added");
     }
+
+    /**
+     * @return the parksList
+     */
+    public ArrayList<parkInfo> getParksList() {
+        return parksList;
+    }
+
+    /**
+     * @param parksList the parksList to set
+     */
+    public void setParksList(ArrayList<parkInfo> parksList) {
+        this.parksList = parksList;
+    }
+
+    public void loadParks() {
+        parkInfoController.loadParks();
+    }
+    
     
     
 }

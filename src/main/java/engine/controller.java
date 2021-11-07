@@ -50,7 +50,6 @@ public class controller {
         this.loginController = new loginController();
         this.workerController = new workerController();
         this.planningController = new planningController();
-        this.parkInfoController = new parkInfoController();
         this.transactionsController = new transactionsController();
         
         this.engine = new engine(this);
@@ -58,6 +57,7 @@ public class controller {
         this.attractionList = engine.getAttractionList();
         
         this.adminController = new adminController(this, this.attractionList);
+        this.parkInfoController = new parkInfoController(this);
         
         mainUI.setVisible(true);
         
@@ -103,13 +103,24 @@ public class controller {
         adminController.setVisible();
     }  
     
+    public void parkInfoSelectedFromMain() {
+        parkInfoController.setVisible();
+    }
+    
     public void newPark(String[] tempArray, attractionList attractionlistTemp) {
-        System.out.println(tempArray[0] + " " + attractionlistTemp.getAttractionList().get(0).toString());
         parkInfoController.newPark(tempArray, attractionlistTemp);
     }
 
     public void setControllers() {
         loginController.setControllerList(this);
+    }
+
+    public void loadParks() {
+        engine.loadParks();
+    }
+
+    public void setParkInfoController(parkInfoController aThis) {
+        this.parkInfoController = aThis;
     }
     
 }

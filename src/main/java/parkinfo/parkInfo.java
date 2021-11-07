@@ -14,10 +14,10 @@ import engine.ride;
  */
 public class parkInfo {
     
-    public String parkName;
-    public String openingTime;
-    public String closingTime;
-    public attractionList attractionList;
+    private String parkName;
+    private String openingTime;
+    private String closingTime;
+    private attractionList attractionList;
     //to be used by parkInfoUI
     //functionality to retrieve information to feed the UI
     //retrieve attraction name, attraction type, time it is open, location, etc...
@@ -63,6 +63,76 @@ public class parkInfo {
     public String displayInfo(String ride){
         //Could be deleted? What is this used for? - Alex
         return "";
+    }
+
+    /**
+     * @return the parkName
+     */
+    public String getParkName() {
+        return parkName;
+    }
+
+    /**
+     * @param parkName the parkName to set
+     */
+    public void setParkName(String parkName) {
+        this.parkName = parkName;
+    }
+
+    /**
+     * @return the openingTime
+     */
+    public String getOpeningTime() {
+        return openingTime;
+    }
+
+    /**
+     * @param openingTime the openingTime to set
+     */
+    public void setOpeningTime(String openingTime) {
+        this.openingTime = openingTime;
+    }
+
+    /**
+     * @return the closingTime
+     */
+    public String getClosingTime() {
+        return closingTime;
+    }
+
+    /**
+     * @param closingTime the closingTime to set
+     */
+    public void setClosingTime(String closingTime) {
+        this.closingTime = closingTime;
+    }
+
+    /**
+     * @return the attractionList
+     */
+    public attractionList getAttractionList() {
+        return attractionList;
+    }
+
+    /**
+     * @param attractionList the attractionList to set
+     */
+    public void setAttractionList(attractionList attractionList) {
+        this.attractionList = attractionList;
+    }
+    
+    public attractionList getType(String identifier) {
+        
+        attractionList tempList = new attractionList();
+        int size = attractionList.getAttractionList().size();
+        
+        for (int i = 0; i < size; i++) {
+            if (attractionList.getAttractionList().get(i).getObjectIdentifier().equals(identifier)) {
+                tempList.addAttraction(attractionList.getAttractionList().get(i));
+            }
+        }
+        
+        return tempList;
     }
     
 

@@ -110,10 +110,6 @@ public class controller {
         parkInfoController.newPark(tempArray, attractionlistTemp);
     }
 
-    public void setControllers() {
-        loginController.setControllerList(this);
-    }
-
     public void loadParks() {
         engine.loadParks();
     }

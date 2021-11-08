@@ -220,6 +220,10 @@ public class parkInfoUI extends JFrame {
         layout.insets = new Insets(20, 300, 0, 300);
         exitButton.addActionListener(event -> exitUI());
         UIPanel.add(exitButton, layout);
+        
+        UIPanel.setVisible(true);
+        getContentPane().add(UIPanel, BorderLayout.NORTH);
+        setDefaultCloseOperation(JFrame.DO_NOTHING_ON_CLOSE);
     }
 
     private void filterRestaurants(String identifier) {
@@ -232,6 +236,7 @@ public class parkInfoUI extends JFrame {
 
     private void exitUI() {
         this.setVisible(false);
+        parkInfoController.setVisible();
     }
 
     private void filterRides(String identifier) {

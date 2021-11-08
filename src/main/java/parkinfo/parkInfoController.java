@@ -27,6 +27,7 @@ public class parkInfoController {
     parkRideTableModel parkRideTableModel;
     parkShopTableModel parkShopTableModel;
     parkEventTableModel parkEventTableModel;
+    parkSelectUI parkSelectUI;
     
     /**
      * Constructor for the parkInfoController class.
@@ -38,6 +39,7 @@ public class parkInfoController {
         this.parksList = new parksList(this);
         this.controller.setParkInfoController(this);
         parksList.loadParks();
+        this.parkSelectUI = new parkSelectUI(this);
         this.parkAttractionsTableModel = new parkAttractionsTableModel(this, "Park 1", this.parksList);
         this.parkInfoUI = new parkInfoUI(this, parkAttractionsTableModel, "Park 1");
         this.parkMapUI = new parkMapUI();
@@ -68,9 +70,16 @@ public class parkInfoController {
     public void loadParks() {
         controller.loadParks();
     }  
+    
+    public void parkInfoVisible(String identifier) {
+        this.parkAttractionsTableModel = new parkAttractionsTableModel(this, identifier, this.parksList);
+        this.parkInfoUI = new parkInfoUI(this, parkAttractionsTableModel, identifier);
+        parkInfoUI.setVisible(true);
+    }
 
     public void setVisible() {
-        parkInfoUI.setVisible(true);
+        controller.mainUI.setVisible(false);
+        parkSelectUI.setVisible(true);
     }
     
     public parkRideTableModel setAsRidesTableModel(String identifier) {
@@ -92,5 +101,12 @@ public class parkInfoController {
         this.parkRestaurantTableModel = new parkRestaurantTableModel(this, identifier, this.parksList);
         return parkRestaurantTableModel;
     }
+
+    public void returnToMainUI() {
+        controller.mainUI.setVisible(true);
+        
+    }
     
 }
+    
+

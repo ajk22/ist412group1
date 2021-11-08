@@ -27,7 +27,6 @@ import javax.swing.border.LineBorder;
  */
 public class parkSelectUI extends JFrame {
     
-    
     private Color white;
     private Color pink;
     private Color black;
